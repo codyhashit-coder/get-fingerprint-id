@@ -1,3 +1,10 @@
+# 检查包版本
+npm version patch
+
+# 发布（公开包）
+npm publish --access public
+
+
 # get-fingerprint-id
 
 一个高精度的设备指纹识别库，支持通过多维度特征（UA、分辨率、DPR、Canvas、WebGL、字体、音频等）识别设备型号并生成唯一设备ID。
