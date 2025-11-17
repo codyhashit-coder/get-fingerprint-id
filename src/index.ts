@@ -3,31 +3,66 @@ import { createDetector, DetectionResult, DeviceType, ModelRule } from './sass-i
 
 // Create detector with initial empty rules
 const detector = createDetector([]);
+const detectorLoadedBrands = new Set<string>();
 
-// Initialize device loader and load device data
-async function initializeDetector() {
-  try {
-    await deviceLoader.initialize();
-    // Get all devices and add them to the detector
-    const allDevices = deviceLoader.getAllDevices();
-    detector.loadModelDB(allDevices);
-  } catch (error) {
-    console.error('Failed to initialize device detector:', error);
+function normalizeBrandName(brand?: string) {
+  return (brand || '').trim().toLowerCase();
+}
+
+function syncBrandsIntoDetector(brands: string[]) {
+  brands
+    .map(normalizeBrandName)
+    .filter((brand): brand is string => Boolean(brand))
+    .forEach(brand => {
+      if (detectorLoadedBrands.has(brand)) return;
+      const brandDevices = deviceLoader.findDevicesByBrand(brand);
+      if (brandDevices.length) {
+        detector.loadModelDB(brandDevices);
+        detectorLoadedBrands.add(brand);
+      }
+    });
+}
+
+async function syncAllLoadedBrands() {
+  syncBrandsIntoDetector(deviceLoader.getLoadedBrands());
+}
+
+export async function prepareDetectorForUA(
+  ua: string,
+  options?: { fallbackLoadAll?: boolean }
+) {
+  const matchedBrands = await deviceLoader.loadDevicesForUA(ua, options);
+  syncBrandsIntoDetector(matchedBrands);
+
+  if (!matchedBrands.length && options?.fallbackLoadAll) {
+    await syncAllLoadedBrands();
   }
 }
 
-// Start initialization
-initializeDetector().catch(console.error);
+export async function preloadAllDevices() {
+  await deviceLoader.initialize({ preloadAll: true });
+  await syncAllLoadedBrands();
+}
+
+async function autoPrepareDetector() {
+  if (typeof navigator !== 'undefined' && navigator.userAgent) {
+    await prepareDetectorForUA(navigator.userAgent, { fallbackLoadAll: true });
+  } else {
+    await preloadAllDevices();
+  }
+}
+
+autoPrepareDetector().catch(console.error);
 
 export {
-    createDetector,
-    detector,
-    deviceLoader
+  createDetector,
+  detector,
+  deviceLoader
 };
 
-    export type {
-        DetectionResult,
-        DeviceType,
-        ModelRule
-    };
+export type {
+  DetectionResult,
+  DeviceType,
+  ModelRule
+};
 

@@ -1,0 +1,2568 @@
+const a = [
+  {
+    id: "samsung-galaxy-s24-ultra",
+    brand: "Samsung",
+    model: "Galaxy S24 Ultra",
+    series: "Galaxy S",
+    year: 2024,
+    uaContains: [
+      "SM-S9280",
+      "Galaxy S24 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3120,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 1e4,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Gen 3"
+    }
+  },
+  {
+    id: "samsung-galaxy-s24-plus",
+    brand: "Samsung",
+    model: "Galaxy S24+",
+    series: "Galaxy S",
+    year: 2024,
+    uaContains: [
+      "SM-S9260",
+      "Galaxy S24+"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3120,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9950,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s24",
+    brand: "Samsung",
+    model: "Galaxy S24",
+    series: "Galaxy S",
+    year: 2024,
+    uaContains: [
+      "SM-S9210",
+      "Galaxy S24"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9900,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-z-fold5",
+    brand: "Samsung",
+    model: "Galaxy Z Fold5",
+    series: "Galaxy Z",
+    year: 2023,
+    uaContains: [
+      "SM-F9460",
+      "Galaxy Z Fold5"
+    ],
+    resolutions: [
+      {
+        w: 904,
+        h: 2316,
+        ratio: "23.1:9"
+      },
+      {
+        w: 1812,
+        h: 2176,
+        ratio: "4:3"
+      }
+    ],
+    dpr: 3,
+    priority: 9850,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-z-flip5",
+    brand: "Samsung",
+    model: "Galaxy Z Flip5",
+    series: "Galaxy Z",
+    year: 2023,
+    uaContains: [
+      "SM-F7310",
+      "Galaxy Z Flip5"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2640,
+        ratio: "22:9"
+      },
+      {
+        w: 1080,
+        h: 748,
+        ratio: "3:2"
+      }
+    ],
+    dpr: 3,
+    priority: 9800,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s23-ultra",
+    brand: "Samsung",
+    model: "Galaxy S23 Ultra",
+    series: "Galaxy S",
+    year: 2023,
+    uaContains: [
+      "SM-S9180",
+      "Galaxy S23 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3088,
+        ratio: "19.3:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9750,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s23-plus",
+    brand: "Samsung",
+    model: "Galaxy S23+",
+    series: "Galaxy S",
+    year: 2023,
+    uaContains: [
+      "SM-S9160",
+      "Galaxy S23+"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9700,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s23",
+    brand: "Samsung",
+    model: "Galaxy S23",
+    series: "Galaxy S",
+    year: 2023,
+    uaContains: [
+      "SM-S9110",
+      "Galaxy S23"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9650,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a54-5g",
+    brand: "Samsung",
+    model: "Galaxy A54 5G",
+    series: "Galaxy A",
+    year: 2023,
+    uaContains: [
+      "SM-A5460",
+      "Galaxy A54 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9600,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a34-5g",
+    brand: "Samsung",
+    model: "Galaxy A34 5G",
+    series: "Galaxy A",
+    year: 2023,
+    uaContains: [
+      "SM-A3460",
+      "Galaxy A34 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9550,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-m54-5g",
+    brand: "Samsung",
+    model: "Galaxy M54 5G",
+    series: "Galaxy M",
+    year: 2023,
+    uaContains: [
+      "SM-M5460",
+      "Galaxy M54 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9500,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-f54-5g",
+    brand: "Samsung",
+    model: "Galaxy F54 5G",
+    series: "Galaxy F",
+    year: 2023,
+    uaContains: [
+      "SM-E5460",
+      "Galaxy F54 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9450,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s22-ultra",
+    brand: "Samsung",
+    model: "Galaxy S22 Ultra",
+    series: "Galaxy S",
+    year: 2022,
+    uaContains: [
+      "SM-S9080",
+      "Galaxy S22 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3088,
+        ratio: "19.3:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9400,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-note20-ultra",
+    brand: "Samsung",
+    model: "Galaxy Note20 Ultra",
+    series: "Galaxy Note",
+    year: 2020,
+    uaContains: [
+      "SM-N9860",
+      "Galaxy Note20 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3088,
+        ratio: "19.3:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9350,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a73-5g",
+    brand: "Samsung",
+    model: "Galaxy A73 5G",
+    series: "Galaxy A",
+    year: 2022,
+    uaContains: [
+      "SM-A7360",
+      "Galaxy A73 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9300,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a53-5g",
+    brand: "Samsung",
+    model: "Galaxy A53 5G",
+    series: "Galaxy A",
+    year: 2022,
+    uaContains: [
+      "SM-A5360",
+      "Galaxy A53 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9250,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a33-5g",
+    brand: "Samsung",
+    model: "Galaxy A33 5G",
+    series: "Galaxy A",
+    year: 2022,
+    uaContains: [
+      "SM-A3360",
+      "Galaxy A33 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9200,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a13-5g",
+    brand: "Samsung",
+    model: "Galaxy A13 5G",
+    series: "Galaxy A",
+    year: 2021,
+    uaContains: [
+      "SM-A1360",
+      "Galaxy A13 5G"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1600,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9150,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a04s",
+    brand: "Samsung",
+    model: "Galaxy A04s",
+    series: "Galaxy A",
+    year: 2022,
+    uaContains: [
+      "SM-A047F",
+      "Galaxy A04s"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1600,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9100,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s25-ultra",
+    brand: "Samsung",
+    model: "Galaxy S25 Ultra",
+    series: "Galaxy S",
+    year: 2025,
+    uaContains: [
+      "SM-S938B",
+      "Galaxy S25 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3120,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 1e4,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Elite"
+    }
+  },
+  {
+    id: "samsung-galaxy-s25-plus",
+    brand: "Samsung",
+    model: "Galaxy S25+",
+    series: "Galaxy S",
+    year: 2025,
+    uaContains: [
+      "SM-S936B",
+      "Galaxy S25+"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3120,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9999,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Elite"
+    }
+  },
+  {
+    id: "samsung-galaxy-s25",
+    brand: "Samsung",
+    model: "Galaxy S25",
+    series: "Galaxy S",
+    year: 2025,
+    uaContains: [
+      "SM-S931B",
+      "Galaxy S25"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9998,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Elite"
+    }
+  },
+  {
+    id: "samsung-galaxy-s25-fe",
+    brand: "Samsung",
+    model: "Galaxy S25 FE",
+    series: "Galaxy S",
+    year: 2025,
+    uaContains: [
+      "SM-S721B",
+      "Galaxy S25 FE"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9997,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Exynos",
+      model: "Exynos 2500"
+    }
+  },
+  {
+    id: "samsung-galaxy-z-fold7",
+    brand: "Samsung",
+    model: "Galaxy Z Fold7",
+    series: "Galaxy Z",
+    year: 2025,
+    uaContains: [
+      "SM-F956B",
+      "Galaxy Z Fold7"
+    ],
+    resolutions: [
+      {
+        w: 1856,
+        h: 2160,
+        ratio: "21.1:18"
+      },
+      {
+        w: 1080,
+        h: 2520,
+        ratio: "21:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9996,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Elite"
+    }
+  },
+  {
+    id: "samsung-galaxy-z-flip7",
+    brand: "Samsung",
+    model: "Galaxy Z Flip7",
+    series: "Galaxy Z",
+    year: 2025,
+    uaContains: [
+      "SM-F741B",
+      "Galaxy Z Flip7"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2640,
+        ratio: "22:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9995,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Elite"
+    }
+  },
+  {
+    id: "samsung-galaxy-z-flip7-fe",
+    brand: "Samsung",
+    model: "Galaxy Z Flip7 FE",
+    series: "Galaxy Z",
+    year: 2025,
+    uaContains: [
+      "SM-F741F",
+      "Galaxy Z Flip7 FE"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2640,
+        ratio: "22:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9994,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Exynos",
+      model: "Exynos 2400e"
+    }
+  },
+  {
+    id: "samsung-galaxy-a56-5g",
+    brand: "Samsung",
+    model: "Galaxy A56 5G",
+    series: "Galaxy A",
+    year: 2025,
+    uaContains: [
+      "SM-A566B",
+      "Galaxy A56 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9993,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Exynos",
+      model: "Exynos 1580"
+    }
+  },
+  {
+    id: "samsung-galaxy-a36-5g",
+    brand: "Samsung",
+    model: "Galaxy A36 5G",
+    series: "Galaxy A",
+    year: 2025,
+    uaContains: [
+      "SM-A366B",
+      "Galaxy A36 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9992,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Exynos",
+      model: "Exynos 1380"
+    }
+  },
+  {
+    id: "samsung-galaxy-a26-5g",
+    brand: "Samsung",
+    model: "Galaxy A26 5G",
+    series: "Galaxy A",
+    year: 2025,
+    uaContains: [
+      "SM-A266B",
+      "Galaxy A26 5G"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1600,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9991,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Exynos",
+      model: "Exynos 1280"
+    }
+  },
+  {
+    id: "samsung-galaxy-tab-s11-ultra",
+    brand: "Samsung",
+    model: "Galaxy Tab S11 Ultra",
+    series: "Galaxy Tab S",
+    year: 2025,
+    uaContains: [
+      "SM-X926B",
+      "Galaxy Tab S11 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1848,
+        h: 2960,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 1e4,
+    type: "tablet",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "MediaTek",
+      model: "Dimensity 9400"
+    }
+  },
+  {
+    id: "samsung-galaxy-tab-s11",
+    brand: "Samsung",
+    model: "Galaxy Tab S11",
+    series: "Galaxy Tab S",
+    year: 2025,
+    uaContains: [
+      "SM-X610",
+      "Galaxy Tab S11"
+    ],
+    resolutions: [
+      {
+        w: 1600,
+        h: 2560,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9999,
+    type: "tablet",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "MediaTek",
+      model: "Dimensity 9400"
+    }
+  },
+  {
+    id: "samsung-galaxy-tab-s10-ultra",
+    brand: "Samsung",
+    model: "Galaxy Tab S10 Ultra",
+    series: "Galaxy Tab S",
+    year: 2024,
+    uaContains: [
+      "SM-X926B",
+      "Galaxy Tab S10 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1848,
+        h: 2960,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9998,
+    type: "tablet",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "MediaTek",
+      model: "Dimensity 9300"
+    }
+  },
+  {
+    id: "samsung-galaxy-tab-s10-plus",
+    brand: "Samsung",
+    model: "Galaxy Tab S10 Plus",
+    series: "Galaxy Tab S",
+    year: 2024,
+    uaContains: [
+      "SM-X626",
+      "Galaxy Tab S10 Plus"
+    ],
+    resolutions: [
+      {
+        w: 1752,
+        h: 2800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9997,
+    type: "tablet",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "MediaTek",
+      model: "Dimensity 9300"
+    }
+  },
+  {
+    id: "samsung-galaxy-tab-s10-fe-plus",
+    brand: "Samsung",
+    model: "Galaxy Tab S10 FE+",
+    series: "Galaxy Tab S",
+    year: 2025,
+    uaContains: [
+      "SM-X620",
+      "Galaxy Tab S10 FE+"
+    ],
+    resolutions: [
+      {
+        w: 1600,
+        h: 2560,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9996,
+    type: "tablet",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Exynos",
+      model: "Exynos 1580"
+    }
+  },
+  {
+    id: "samsung-galaxy-tab-s10-fe",
+    brand: "Samsung",
+    model: "Galaxy Tab S10 FE",
+    series: "Galaxy Tab S",
+    year: 2025,
+    uaContains: [
+      "SM-X510",
+      "Galaxy Tab S10 FE"
+    ],
+    resolutions: [
+      {
+        w: 1200,
+        h: 1920,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 1.5,
+    priority: 9995,
+    type: "tablet",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Exynos",
+      model: "Exynos 1580"
+    }
+  },
+  {
+    id: "samsung-galaxy-tab-active5-pro",
+    brand: "Samsung",
+    model: "Galaxy Tab Active5 Pro",
+    series: "Galaxy Tab Active",
+    year: 2025,
+    uaContains: [
+      "SM-T630",
+      "Galaxy Tab Active5 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1920,
+        h: 1200,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9994,
+    type: "tablet",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 7 Gen 1"
+    }
+  },
+  {
+    id: "samsung-galaxy-book5-pro-360",
+    brand: "Samsung",
+    model: "Galaxy Book5 Pro 360",
+    series: "Galaxy Book",
+    year: 2025,
+    uaContains: [
+      "NP940XGJ",
+      "Galaxy Book5 Pro 360"
+    ],
+    resolutions: [
+      {
+        w: 2880,
+        h: 1800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 1e4,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core Ultra 7 258V"
+    }
+  },
+  {
+    id: "samsung-galaxy-book5-pro",
+    brand: "Samsung",
+    model: "Galaxy Book5 Pro",
+    series: "Galaxy Book",
+    year: 2025,
+    uaContains: [
+      "NP750XGJ",
+      "Galaxy Book5 Pro"
+    ],
+    resolutions: [
+      {
+        w: 2880,
+        h: 1800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9999,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core Ultra 7 258V"
+    }
+  },
+  {
+    id: "samsung-galaxy-book5-ultra",
+    brand: "Samsung",
+    model: "Galaxy Book5 Ultra",
+    series: "Galaxy Book",
+    year: 2025,
+    uaContains: [
+      "NP960XGJ",
+      "Galaxy Book5 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 2880,
+        h: 1800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9998,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core Ultra 9 285H"
+    }
+  },
+  {
+    id: "samsung-galaxy-book4-edge",
+    brand: "Samsung",
+    model: "Galaxy Book4 Edge",
+    series: "Galaxy Book",
+    year: 2024,
+    uaContains: [
+      "NP740XGE",
+      "Galaxy Book4 Edge"
+    ],
+    resolutions: [
+      {
+        w: 2880,
+        h: 1800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9997,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon X Elite"
+    }
+  },
+  {
+    id: "samsung-galaxy-book4-pro-360",
+    brand: "Samsung",
+    model: "Galaxy Book4 Pro 360",
+    series: "Galaxy Book",
+    year: 2024,
+    uaContains: [
+      "NP730QFG",
+      "Galaxy Book4 Pro 360"
+    ],
+    resolutions: [
+      {
+        w: 2880,
+        h: 1800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9996,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core Ultra 7 155H"
+    }
+  },
+  {
+    id: "samsung-galaxy-book4-pro",
+    brand: "Samsung",
+    model: "Galaxy Book4 Pro",
+    series: "Galaxy Book",
+    year: 2024,
+    uaContains: [
+      "NP750XFG",
+      "Galaxy Book4 Pro"
+    ],
+    resolutions: [
+      {
+        w: 2880,
+        h: 1800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9995,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core Ultra 7 155H"
+    }
+  },
+  {
+    id: "samsung-galaxy-book3-ultra",
+    brand: "Samsung",
+    model: "Galaxy Book3 Ultra",
+    series: "Galaxy Book",
+    year: 2023,
+    uaContains: [
+      "NP960XFG",
+      "Galaxy Book3 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 2880,
+        h: 1800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9994,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core i9-13900H"
+    }
+  },
+  {
+    id: "samsung-galaxy-book3-pro-360",
+    brand: "Samsung",
+    model: "Galaxy Book3 Pro 360",
+    series: "Galaxy Book",
+    year: 2023,
+    uaContains: [
+      "NP730QFG",
+      "Galaxy Book3 Pro 360"
+    ],
+    resolutions: [
+      {
+        w: 2880,
+        h: 1800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9993,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core i7-1360P"
+    }
+  },
+  {
+    id: "samsung-galaxy-book3-pro",
+    brand: "Samsung",
+    model: "Galaxy Book3 Pro",
+    series: "Galaxy Book",
+    year: 2023,
+    uaContains: [
+      "NP750XFG",
+      "Galaxy Book3 Pro"
+    ],
+    resolutions: [
+      {
+        w: 2880,
+        h: 1800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9992,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core i7-1360P"
+    }
+  },
+  {
+    id: "samsung-galaxy-s24-ultra",
+    brand: "Samsung",
+    model: "Galaxy S24 Ultra",
+    series: "Galaxy S",
+    year: 2024,
+    uaContains: [
+      "SM-S9280",
+      "Galaxy S24 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3120,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 1e4,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Gen 3"
+    }
+  },
+  {
+    id: "samsung-galaxy-s24-plus",
+    brand: "Samsung",
+    model: "Galaxy S24+",
+    series: "Galaxy S",
+    year: 2024,
+    uaContains: [
+      "SM-S9260",
+      "Galaxy S24+"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3120,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9950,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s24",
+    brand: "Samsung",
+    model: "Galaxy S24",
+    series: "Galaxy S",
+    year: 2024,
+    uaContains: [
+      "SM-S9210",
+      "Galaxy S24"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9900,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-z-fold5",
+    brand: "Samsung",
+    model: "Galaxy Z Fold5",
+    series: "Galaxy Z",
+    year: 2023,
+    uaContains: [
+      "SM-F9460",
+      "Galaxy Z Fold5"
+    ],
+    resolutions: [
+      {
+        w: 904,
+        h: 2316,
+        ratio: "23.1:9"
+      },
+      {
+        w: 1812,
+        h: 2176,
+        ratio: "4:3"
+      }
+    ],
+    dpr: 3,
+    priority: 9850,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-z-flip5",
+    brand: "Samsung",
+    model: "Galaxy Z Flip5",
+    series: "Galaxy Z",
+    year: 2023,
+    uaContains: [
+      "SM-F7310",
+      "Galaxy Z Flip5"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2640,
+        ratio: "22:9"
+      },
+      {
+        w: 1080,
+        h: 748,
+        ratio: "3:2"
+      }
+    ],
+    dpr: 3,
+    priority: 9800,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s23-ultra",
+    brand: "Samsung",
+    model: "Galaxy S23 Ultra",
+    series: "Galaxy S",
+    year: 2023,
+    uaContains: [
+      "SM-S9180",
+      "Galaxy S23 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3088,
+        ratio: "19.3:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9750,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s23-plus",
+    brand: "Samsung",
+    model: "Galaxy S23+",
+    series: "Galaxy S",
+    year: 2023,
+    uaContains: [
+      "SM-S9160",
+      "Galaxy S23+"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9700,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s23",
+    brand: "Samsung",
+    model: "Galaxy S23",
+    series: "Galaxy S",
+    year: 2023,
+    uaContains: [
+      "SM-S9110",
+      "Galaxy S23"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9650,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a54-5g",
+    brand: "Samsung",
+    model: "Galaxy A54 5G",
+    series: "Galaxy A",
+    year: 2023,
+    uaContains: [
+      "SM-A5460",
+      "Galaxy A54 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9600,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a34-5g",
+    brand: "Samsung",
+    model: "Galaxy A34 5G",
+    series: "Galaxy A",
+    year: 2023,
+    uaContains: [
+      "SM-A3460",
+      "Galaxy A34 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9550,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-m54-5g",
+    brand: "Samsung",
+    model: "Galaxy M54 5G",
+    series: "Galaxy M",
+    year: 2023,
+    uaContains: [
+      "SM-M5460",
+      "Galaxy M54 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9500,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-f54-5g",
+    brand: "Samsung",
+    model: "Galaxy F54 5G",
+    series: "Galaxy F",
+    year: 2023,
+    uaContains: [
+      "SM-E5460",
+      "Galaxy F54 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9450,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s22-ultra",
+    brand: "Samsung",
+    model: "Galaxy S22 Ultra",
+    series: "Galaxy S",
+    year: 2022,
+    uaContains: [
+      "SM-S9080",
+      "Galaxy S22 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3088,
+        ratio: "19.3:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9400,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-note20-ultra",
+    brand: "Samsung",
+    model: "Galaxy Note20 Ultra",
+    series: "Galaxy Note",
+    year: 2020,
+    uaContains: [
+      "SM-N9860",
+      "Galaxy Note20 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3088,
+        ratio: "19.3:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9350,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a73-5g",
+    brand: "Samsung",
+    model: "Galaxy A73 5G",
+    series: "Galaxy A",
+    year: 2022,
+    uaContains: [
+      "SM-A7360",
+      "Galaxy A73 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9300,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a53-5g",
+    brand: "Samsung",
+    model: "Galaxy A53 5G",
+    series: "Galaxy A",
+    year: 2022,
+    uaContains: [
+      "SM-A5360",
+      "Galaxy A53 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9250,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a33-5g",
+    brand: "Samsung",
+    model: "Galaxy A33 5G",
+    series: "Galaxy A",
+    year: 2022,
+    uaContains: [
+      "SM-A3360",
+      "Galaxy A33 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9200,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a13-5g",
+    brand: "Samsung",
+    model: "Galaxy A13 5G",
+    series: "Galaxy A",
+    year: 2021,
+    uaContains: [
+      "SM-A1360",
+      "Galaxy A13 5G"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1600,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9150,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a04s",
+    brand: "Samsung",
+    model: "Galaxy A04s",
+    series: "Galaxy A",
+    year: 2022,
+    uaContains: [
+      "SM-A047F",
+      "Galaxy A04s"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1600,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9100,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s23-fe",
+    brand: "Samsung",
+    model: "Galaxy S23 FE",
+    series: "Galaxy S",
+    year: 2023,
+    uaContains: [
+      "SM-S7110",
+      "Galaxy S23 FE"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9600,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a14-5g",
+    brand: "Samsung",
+    model: "Galaxy A14 5G",
+    series: "Galaxy A",
+    year: 2023,
+    uaContains: [
+      "SM-A1460",
+      "Galaxy A14 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9500,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-z-fold4",
+    brand: "Samsung",
+    model: "Galaxy Z Fold4",
+    series: "Galaxy Z",
+    year: 2022,
+    uaContains: [
+      "SM-F9360",
+      "Galaxy Z Fold4"
+    ],
+    resolutions: [
+      {
+        w: 904,
+        h: 2316,
+        ratio: "23.1:9"
+      },
+      {
+        w: 1768,
+        h: 2208,
+        ratio: "4:3"
+      }
+    ],
+    dpr: 3,
+    priority: 9450,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-z-flip4",
+    brand: "Samsung",
+    model: "Galaxy Z Flip4",
+    series: "Galaxy Z",
+    year: 2022,
+    uaContains: [
+      "SM-F7210",
+      "Galaxy Z Flip4"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2640,
+        ratio: "22:9"
+      },
+      {
+        w: 1080,
+        h: 748,
+        ratio: "3:2"
+      }
+    ],
+    dpr: 3,
+    priority: 9400,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s22-plus",
+    brand: "Samsung",
+    model: "Galaxy S22+",
+    series: "Galaxy S",
+    year: 2022,
+    uaContains: [
+      "SM-S9060",
+      "Galaxy S22+"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9350,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s22",
+    brand: "Samsung",
+    model: "Galaxy S22",
+    series: "Galaxy S",
+    year: 2022,
+    uaContains: [
+      "SM-S9010",
+      "Galaxy S22"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9300,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a52s-5g",
+    brand: "Samsung",
+    model: "Galaxy A52s 5G",
+    series: "Galaxy A",
+    year: 2021,
+    uaContains: [
+      "SM-A5280",
+      "Galaxy A52s 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9250,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a72",
+    brand: "Samsung",
+    model: "Galaxy A72",
+    series: "Galaxy A",
+    year: 2021,
+    uaContains: [
+      "SM-A725F",
+      "Galaxy A72"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9200,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a52-5g",
+    brand: "Samsung",
+    model: "Galaxy A52 5G",
+    series: "Galaxy A",
+    year: 2021,
+    uaContains: [
+      "SM-A5260",
+      "Galaxy A52 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9150,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a32-5g",
+    brand: "Samsung",
+    model: "Galaxy A32 5G",
+    series: "Galaxy A",
+    year: 2021,
+    uaContains: [
+      "SM-A3260",
+      "Galaxy A32 5G"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1600,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9100,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s21-ultra",
+    brand: "Samsung",
+    model: "Galaxy S21 Ultra",
+    series: "Galaxy S",
+    year: 2021,
+    uaContains: [
+      "SM-G9980",
+      "Galaxy S21 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3200,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9050,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s21-plus",
+    brand: "Samsung",
+    model: "Galaxy S21+",
+    series: "Galaxy S",
+    year: 2021,
+    uaContains: [
+      "SM-G9960",
+      "Galaxy S21+"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 3,
+    priority: 9e3,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s21",
+    brand: "Samsung",
+    model: "Galaxy S21",
+    series: "Galaxy S",
+    year: 2021,
+    uaContains: [
+      "SM-G9910",
+      "Galaxy S21"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 3,
+    priority: 8950,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-note20",
+    brand: "Samsung",
+    model: "Galaxy Note20",
+    series: "Galaxy Note",
+    year: 2020,
+    uaContains: [
+      "SM-N9810",
+      "Galaxy Note20"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 3,
+    priority: 8900,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-z-fold3",
+    brand: "Samsung",
+    model: "Galaxy Z Fold3",
+    series: "Galaxy Z",
+    year: 2021,
+    uaContains: [
+      "SM-F9260",
+      "Galaxy Z Fold3"
+    ],
+    resolutions: [
+      {
+        w: 904,
+        h: 2260,
+        ratio: "25:10"
+      },
+      {
+        w: 1768,
+        h: 2208,
+        ratio: "4:3"
+      }
+    ],
+    dpr: 3,
+    priority: 8850,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-z-flip3",
+    brand: "Samsung",
+    model: "Galaxy Z Flip3",
+    series: "Galaxy Z",
+    year: 2021,
+    uaContains: [
+      "SM-F7110",
+      "Galaxy Z Flip3"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2640,
+        ratio: "22:9"
+      },
+      {
+        w: 1080,
+        h: 748,
+        ratio: "3:2"
+      }
+    ],
+    dpr: 3,
+    priority: 8800,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a12",
+    brand: "Samsung",
+    model: "Galaxy A12",
+    series: "Galaxy A",
+    year: 2020,
+    uaContains: [
+      "SM-A125F",
+      "Galaxy A12"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1600,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 8750,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s20-ultra",
+    brand: "Samsung",
+    model: "Galaxy S20 Ultra",
+    series: "Galaxy S",
+    year: 2020,
+    uaContains: [
+      "SM-G9880",
+      "Galaxy S20 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3200,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 3,
+    priority: 8700,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s20-plus",
+    brand: "Samsung",
+    model: "Galaxy S20+",
+    series: "Galaxy S",
+    year: 2020,
+    uaContains: [
+      "SM-G9860",
+      "Galaxy S20+"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3200,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 3,
+    priority: 8650,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s20",
+    brand: "Samsung",
+    model: "Galaxy S20",
+    series: "Galaxy S",
+    year: 2020,
+    uaContains: [
+      "SM-G9810",
+      "Galaxy S20"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3200,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 3,
+    priority: 8600,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-z-fold2",
+    brand: "Samsung",
+    model: "Galaxy Z Fold2",
+    series: "Galaxy Z",
+    year: 2020,
+    uaContains: [
+      "SM-F9160",
+      "Galaxy Z Fold2"
+    ],
+    resolutions: [
+      {
+        w: 816,
+        h: 2152,
+        ratio: "25:9"
+      },
+      {
+        w: 1768,
+        h: 2208,
+        ratio: "4:3"
+      }
+    ],
+    dpr: 3,
+    priority: 8550,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-note10-plus",
+    brand: "Samsung",
+    model: "Galaxy Note10+",
+    series: "Galaxy Note",
+    year: 2019,
+    uaContains: [
+      "SM-N9750",
+      "Galaxy Note10+"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3040,
+        ratio: "19:9"
+      }
+    ],
+    dpr: 3,
+    priority: 8500,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-note10",
+    brand: "Samsung",
+    model: "Galaxy Note10",
+    series: "Galaxy Note",
+    year: 2019,
+    uaContains: [
+      "SM-N9700",
+      "Galaxy Note10"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2280,
+        ratio: "19:9"
+      }
+    ],
+    dpr: 3,
+    priority: 8450,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s10-plus",
+    brand: "Samsung",
+    model: "Galaxy S10+",
+    series: "Galaxy S",
+    year: 2019,
+    uaContains: [
+      "SM-G9750",
+      "Galaxy S10+"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3040,
+        ratio: "19:9"
+      }
+    ],
+    dpr: 3,
+    priority: 8400,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s10",
+    brand: "Samsung",
+    model: "Galaxy S10",
+    series: "Galaxy S",
+    year: 2019,
+    uaContains: [
+      "SM-G9730",
+      "Galaxy S10"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 3040,
+        ratio: "19:9"
+      }
+    ],
+    dpr: 3,
+    priority: 8350,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s10e",
+    brand: "Samsung",
+    model: "Galaxy S10e",
+    series: "Galaxy S",
+    year: 2019,
+    uaContains: [
+      "SM-G9700",
+      "Galaxy S10e"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2280,
+        ratio: "19:9"
+      }
+    ],
+    dpr: 3,
+    priority: 8300,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a50",
+    brand: "Samsung",
+    model: "Galaxy A50",
+    series: "Galaxy A",
+    year: 2019,
+    uaContains: [
+      "SM-A505F",
+      "Galaxy A50"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 8250,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a70",
+    brand: "Samsung",
+    model: "Galaxy A70",
+    series: "Galaxy A",
+    year: 2019,
+    uaContains: [
+      "SM-A705F",
+      "Galaxy A70"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 8200,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-note9",
+    brand: "Samsung",
+    model: "Galaxy Note9",
+    series: "Galaxy Note",
+    year: 2018,
+    uaContains: [
+      "SM-N9600",
+      "Galaxy Note9"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 2960,
+        ratio: "18.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 8150,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s9-plus",
+    brand: "Samsung",
+    model: "Galaxy S9+",
+    series: "Galaxy S",
+    year: 2018,
+    uaContains: [
+      "SM-G9650",
+      "Galaxy S9+"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 2960,
+        ratio: "18.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 8100,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s9",
+    brand: "Samsung",
+    model: "Galaxy S9",
+    series: "Galaxy S",
+    year: 2018,
+    uaContains: [
+      "SM-G9600",
+      "Galaxy S9"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 2960,
+        ratio: "18.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 8050,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a8-2018",
+    brand: "Samsung",
+    model: "Galaxy A8 (2018)",
+    series: "Galaxy A",
+    year: 2018,
+    uaContains: [
+      "SM-A530F",
+      "Galaxy A8 (2018)"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2220,
+        ratio: "18.5:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 8e3,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-note8",
+    brand: "Samsung",
+    model: "Galaxy Note8",
+    series: "Galaxy Note",
+    year: 2017,
+    uaContains: [
+      "SM-N9500",
+      "Galaxy Note8"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 2960,
+        ratio: "18.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 7950,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s8-plus",
+    brand: "Samsung",
+    model: "Galaxy S8+",
+    series: "Galaxy S",
+    year: 2017,
+    uaContains: [
+      "SM-G9550",
+      "Galaxy S8+"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 2960,
+        ratio: "18.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 7900,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s8",
+    brand: "Samsung",
+    model: "Galaxy S8",
+    series: "Galaxy S",
+    year: 2017,
+    uaContains: [
+      "SM-G9500",
+      "Galaxy S8"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 2960,
+        ratio: "18.5:9"
+      }
+    ],
+    dpr: 3,
+    priority: 7850,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a7-2017",
+    brand: "Samsung",
+    model: "Galaxy A7 (2017)",
+    series: "Galaxy A",
+    year: 2017,
+    uaContains: [
+      "SM-A720F",
+      "Galaxy A7 (2017)"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 1920,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 7800,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-note7",
+    brand: "Samsung",
+    model: "Galaxy Note7",
+    series: "Galaxy Note",
+    year: 2016,
+    uaContains: [
+      "SM-N9300",
+      "Galaxy Note7"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 2560,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 3,
+    priority: 7750,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s7-edge",
+    brand: "Samsung",
+    model: "Galaxy S7 Edge",
+    series: "Galaxy S",
+    year: 2016,
+    uaContains: [
+      "SM-G9350",
+      "Galaxy S7 Edge"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 2560,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 3,
+    priority: 7700,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s7",
+    brand: "Samsung",
+    model: "Galaxy S7",
+    series: "Galaxy S",
+    year: 2016,
+    uaContains: [
+      "SM-G9300",
+      "Galaxy S7"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 2560,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 3,
+    priority: 7650,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a9-2016",
+    brand: "Samsung",
+    model: "Galaxy A9 (2016)",
+    series: "Galaxy A",
+    year: 2016,
+    uaContains: [
+      "SM-A9000",
+      "Galaxy A9 (2016)"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 1920,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 7600,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-note5",
+    brand: "Samsung",
+    model: "Galaxy Note5",
+    series: "Galaxy Note",
+    year: 2015,
+    uaContains: [
+      "SM-N9200",
+      "Galaxy Note5"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 2560,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 3,
+    priority: 7550,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s6-edge-plus",
+    brand: "Samsung",
+    model: "Galaxy S6 Edge+",
+    series: "Galaxy S",
+    year: 2015,
+    uaContains: [
+      "SM-G9280",
+      "Galaxy S6 Edge+"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 2560,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 3,
+    priority: 7500,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s6-edge",
+    brand: "Samsung",
+    model: "Galaxy S6 Edge",
+    series: "Galaxy S",
+    year: 2015,
+    uaContains: [
+      "SM-G9250",
+      "Galaxy S6 Edge"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 2560,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 3,
+    priority: 7450,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-s6",
+    brand: "Samsung",
+    model: "Galaxy S6",
+    series: "Galaxy S",
+    year: 2015,
+    uaContains: [
+      "SM-G9200",
+      "Galaxy S6"
+    ],
+    resolutions: [
+      {
+        w: 1440,
+        h: 2560,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 3,
+    priority: 7400,
+    type: "phone"
+  },
+  {
+    id: "samsung-galaxy-a8-2015",
+    brand: "Samsung",
+    model: "Galaxy A8 (2015)",
+    series: "Galaxy A",
+    year: 2015,
+    uaContains: [
+      "SM-A8000",
+      "Galaxy A8 (2015)"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 1920,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 7350,
+    type: "phone"
+  }
+];
+export {
+  a as default
+};

@@ -15,12 +15,26 @@ export interface Device extends ModelRule {
 declare class DeviceLoader {
     private devices;
     private initialized;
-    initialize(): Promise<void>;
+    private allBrandsLoaded;
+    private brandLoaders;
+    private loadedBrands;
+    private loadingBrands;
+    constructor();
+    initialize(options?: {
+        preloadAll?: boolean;
+    }): Promise<void>;
+    loadDevicesForBrand(brand: string): Promise<void>;
+    loadDevicesForUA(ua: string, options?: {
+        fallbackLoadAll?: boolean;
+    }): Promise<string[]>;
     getDeviceById(id: string): Device | undefined;
     findDevicesByBrand(brand: string): Device[];
     getAllDevices(): Device[];
+    getLoadedBrands(): string[];
     addDevice(device: Device): void;
     addDevices(devices: Device[]): void;
+    private loadAllBrands;
+    private guessBrandsFromUA;
 }
 export declare const deviceLoader: DeviceLoader;
 export {};

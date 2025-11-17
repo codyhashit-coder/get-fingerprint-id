@@ -1,0 +1,845 @@
+const o = [
+  {
+    id: "honor-magic8-pro",
+    brand: "Honor",
+    model: "Magic8 Pro",
+    series: "Magic",
+    year: 2025,
+    uaContains: [
+      "Magic8 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1264,
+        h: 2800,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.6,
+    priority: 1e4,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Elite Gen 5"
+    }
+  },
+  {
+    id: "honor-magic7-pro",
+    brand: "Honor",
+    model: "Magic7 Pro",
+    series: "Magic",
+    year: 2025,
+    uaContains: [
+      "Magic7 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1280,
+        h: 2800,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.6,
+    priority: 1e4,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Elite"
+    }
+  },
+  {
+    id: "honor-magic6-pro",
+    brand: "Honor",
+    model: "Magic6 Pro",
+    series: "Magic",
+    year: 2024,
+    uaContains: [
+      "Magic6 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1280,
+        h: 2800,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.6,
+    priority: 1e4,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Gen 3"
+    }
+  },
+  {
+    id: "honor-magic-v3",
+    brand: "Honor",
+    model: "Magic V3",
+    series: "Magic",
+    year: 2024,
+    uaContains: [
+      "Magic V3"
+    ],
+    resolutions: [
+      {
+        w: 1184,
+        h: 2376,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.3,
+    priority: 1e4,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Gen 3"
+    }
+  },
+  {
+    id: "honor-400-pro",
+    brand: "Honor",
+    model: "400 Pro",
+    series: "Number",
+    year: 2025,
+    uaContains: [
+      "400 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1212,
+        h: 2668,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 7s Gen 3"
+    }
+  },
+  {
+    id: "honor-400",
+    brand: "Honor",
+    model: "400",
+    series: "Number",
+    year: 2025,
+    uaContains: [
+      "400"
+    ],
+    resolutions: [
+      {
+        w: 1212,
+        h: 2668,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 7 Gen 3"
+    }
+  },
+  {
+    id: "honor-300-pro",
+    brand: "Honor",
+    model: "300 Pro",
+    series: "Number",
+    year: 2024,
+    uaContains: [
+      "300 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1212,
+        h: 2668,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 7 Gen 3"
+    }
+  },
+  {
+    id: "honor-200-pro",
+    brand: "Honor",
+    model: "200 Pro",
+    series: "Number",
+    year: 2024,
+    uaContains: [
+      "200 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1200,
+        h: 2664,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.6,
+    priority: 9800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8s Gen 3"
+    }
+  },
+  {
+    id: "honor-x60",
+    brand: "Honor",
+    model: "X60",
+    series: "X",
+    year: 2025,
+    uaContains: [
+      "X60"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "MediaTek",
+      model: "Dimensity 7025-Ultra"
+    }
+  },
+  {
+    id: "honor-x50-pro",
+    brand: "Honor",
+    model: "X50 Pro",
+    series: "X",
+    year: 2023,
+    uaContains: [
+      "X50 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1200,
+        h: 2664,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "13"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 6 Gen 1"
+    }
+  },
+  {
+    id: "honor-x40",
+    brand: "Honor",
+    model: "X40",
+    series: "X",
+    year: 2022,
+    uaContains: [
+      "X40"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2376,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "12"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 695"
+    }
+  },
+  {
+    id: "honor-play50-pro",
+    brand: "Honor",
+    model: "Play50 Pro",
+    series: "Play",
+    year: 2025,
+    uaContains: [
+      "Play50 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2412,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9200,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "MediaTek",
+      model: "Dimensity 7025"
+    }
+  },
+  {
+    id: "honor-play40",
+    brand: "Honor",
+    model: "Play40",
+    series: "Play",
+    year: 2023,
+    uaContains: [
+      "Play40"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9200,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "13"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 6s Gen 1"
+    }
+  },
+  {
+    id: "honor-play30",
+    brand: "Honor",
+    model: "Play30",
+    series: "Play",
+    year: 2022,
+    uaContains: [
+      "Play30"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1612,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 1.5,
+    priority: 9200,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "12"
+    },
+    cpu: {
+      brand: "Unisoc",
+      model: "SC9863A"
+    }
+  },
+  {
+    id: "honor-60-pro",
+    brand: "Honor",
+    model: "60 Pro",
+    series: "Number",
+    year: 2021,
+    uaContains: [
+      "60 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1212,
+        h: 2664,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 778G"
+    }
+  },
+  {
+    id: "honor-50",
+    brand: "Honor",
+    model: "50",
+    series: "Number",
+    year: 2021,
+    uaContains: [
+      "50"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.6,
+    priority: 9800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 778G"
+    }
+  },
+  {
+    id: "honor-x30",
+    brand: "Honor",
+    model: "X30",
+    series: "X",
+    year: 2021,
+    uaContains: [
+      "X30"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2376,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 695"
+    }
+  },
+  {
+    id: "honor-play20",
+    brand: "Honor",
+    model: "Play20",
+    series: "Play",
+    year: 2021,
+    uaContains: [
+      "Play20"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1600,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 1.5,
+    priority: 9200,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "10"
+    },
+    cpu: {
+      brand: "MediaTek",
+      model: "Helio G25"
+    }
+  },
+  {
+    id: "honor-40-pro",
+    brand: "Honor",
+    model: "40 Pro",
+    series: "Number",
+    year: 2021,
+    uaContains: [
+      "40 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1236,
+        h: 2676,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.6,
+    priority: 9800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 888"
+    }
+  },
+  {
+    id: "honor-x20",
+    brand: "Honor",
+    model: "X20",
+    series: "X",
+    year: 2021,
+    uaContains: [
+      "X20"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2376,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "MediaTek",
+      model: "Dimensity 900"
+    }
+  },
+  {
+    id: "honor-play",
+    brand: "Honor",
+    model: "Play",
+    series: "Play",
+    year: 2018,
+    uaContains: [
+      "Play"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.2,
+    priority: 9200,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "8"
+    },
+    cpu: {
+      brand: "HiSilicon",
+      model: "Kirin 970"
+    }
+  },
+  {
+    id: "honor-view20",
+    brand: "Honor",
+    model: "View20",
+    series: "View",
+    year: 2019,
+    uaContains: [
+      "View20"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2310,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.2,
+    priority: 9800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "9"
+    },
+    cpu: {
+      brand: "HiSilicon",
+      model: "Kirin 980"
+    }
+  },
+  {
+    id: "honor-20-pro",
+    brand: "Honor",
+    model: "20 Pro",
+    series: "Number",
+    year: 2019,
+    uaContains: [
+      "20 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.2,
+    priority: 9800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "9"
+    },
+    cpu: {
+      brand: "HiSilicon",
+      model: "Kirin 980"
+    }
+  },
+  {
+    id: "honor-x10",
+    brand: "Honor",
+    model: "X10",
+    series: "X",
+    year: 2020,
+    uaContains: [
+      "X10"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.2,
+    priority: 9500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "10"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 680"
+    }
+  },
+  {
+    id: "honor-10",
+    brand: "Honor",
+    model: "10",
+    series: "Number",
+    year: 2018,
+    uaContains: [
+      "10"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.2,
+    priority: 9800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "8"
+    },
+    cpu: {
+      brand: "HiSilicon",
+      model: "Kirin 970"
+    }
+  },
+  {
+    id: "honor-9x",
+    brand: "Honor",
+    model: "9X",
+    series: "X",
+    year: 2019,
+    uaContains: [
+      "9X"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.2,
+    priority: 9500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "9"
+    },
+    cpu: {
+      brand: "HiSilicon",
+      model: "Kirin 710F"
+    }
+  },
+  {
+    id: "honor-view10",
+    brand: "Honor",
+    model: "View10",
+    series: "View",
+    year: 2017,
+    uaContains: [
+      "View10"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2160,
+        ratio: "18:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "8"
+    },
+    cpu: {
+      brand: "HiSilicon",
+      model: "Kirin 970"
+    }
+  },
+  {
+    id: "honor-9",
+    brand: "Honor",
+    model: "9",
+    series: "Number",
+    year: 2017,
+    uaContains: [
+      "9"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 1920,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "7"
+    },
+    cpu: {
+      brand: "HiSilicon",
+      model: "Kirin 960"
+    }
+  },
+  {
+    id: "honor-8x",
+    brand: "Honor",
+    model: "8X",
+    series: "X",
+    year: 2018,
+    uaContains: [
+      "8X"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.2,
+    priority: 9500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "8"
+    },
+    cpu: {
+      brand: "HiSilicon",
+      model: "Kirin 710"
+    }
+  },
+  {
+    id: "honor-7x",
+    brand: "Honor",
+    model: "7X",
+    series: "X",
+    year: 2017,
+    uaContains: [
+      "7X"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2160,
+        ratio: "18:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "7"
+    },
+    cpu: {
+      brand: "HiSilicon",
+      model: "Kirin 659"
+    }
+  }
+];
+export {
+  o as default
+};

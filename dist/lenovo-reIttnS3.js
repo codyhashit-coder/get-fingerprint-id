@@ -1,0 +1,714 @@
+const o = [
+  {
+    id: "lenovo-legion-tab-gen-3-2025",
+    brand: "Lenovo",
+    model: "Legion Tab Gen 3",
+    series: "Legion",
+    year: 2025,
+    uaContains: [
+      "Lenovo Legion Tab Gen 3",
+      "TB332FU"
+    ],
+    resolutions: [
+      {
+        w: 2560,
+        h: 1600,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 11e3,
+    type: "tablet",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Gen 3"
+    }
+  },
+  {
+    id: "lenovo-legion-go-2",
+    brand: "Lenovo",
+    model: "Legion Go 2",
+    series: "Legion",
+    year: 2025,
+    uaContains: [
+      "Lenovo Legion Go 2",
+      "LENOVO Legion Go 2"
+    ],
+    resolutions: [
+      {
+        w: 1920,
+        h: 1200,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 1.5,
+    priority: 10900,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "AMD",
+      model: "Ryzen Z2 Extreme"
+    }
+  },
+  {
+    id: "lenovo-thinkpad-x1-carbon-gen13",
+    brand: "Lenovo",
+    model: "ThinkPad X1 Carbon Gen 13",
+    series: "ThinkPad",
+    year: 2025,
+    uaContains: [
+      "ThinkPad X1 Carbon Gen 13",
+      "21NS"
+    ],
+    resolutions: [
+      {
+        w: 2880,
+        h: 1800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 1.5,
+    priority: 10800,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core Ultra 7 258V"
+    }
+  },
+  {
+    id: "lenovo-yoga-9i-2025",
+    brand: "Lenovo",
+    model: "Yoga 9i (2025)",
+    series: "Yoga",
+    year: 2025,
+    uaContains: [
+      "Yoga 9i 2025",
+      "LENOVO Yoga 9i"
+    ],
+    resolutions: [
+      {
+        w: 3840,
+        h: 2400,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 10700,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core Ultra 7 258V"
+    }
+  },
+  {
+    id: "lenovo-thinkpad-x1-carbon-gen12",
+    brand: "Lenovo",
+    model: "ThinkPad X1 Carbon Gen 12",
+    series: "ThinkPad",
+    year: 2024,
+    uaContains: [
+      "ThinkPad X1 Carbon Gen 12",
+      "21KC"
+    ],
+    resolutions: [
+      {
+        w: 2880,
+        h: 1800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 1.5,
+    priority: 10650,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core Ultra 7 155U"
+    }
+  },
+  {
+    id: "lenovo-legion-slim-5-2024",
+    brand: "Lenovo",
+    model: "Legion Slim 5 (2024)",
+    series: "Legion",
+    year: 2024,
+    uaContains: [
+      "Legion Slim 5 2024",
+      "83ER"
+    ],
+    resolutions: [
+      {
+        w: 2560,
+        h: 1600,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 1.5,
+    priority: 10600,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "AMD",
+      model: "Ryzen 7 7840HS"
+    }
+  },
+  {
+    id: "lenovo-thinkpad-x1-carbon-gen11",
+    brand: "Lenovo",
+    model: "ThinkPad X1 Carbon Gen 11",
+    series: "ThinkPad",
+    year: 2023,
+    uaContains: [
+      "ThinkPad X1 Carbon Gen 11",
+      "21HM"
+    ],
+    resolutions: [
+      {
+        w: 2880,
+        h: 1800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 1.5,
+    priority: 10450,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core i7-1365U"
+    }
+  },
+  {
+    id: "lenovo-legion-y90",
+    brand: "Lenovo",
+    model: "Legion Y90",
+    series: "Legion",
+    year: 2023,
+    uaContains: [
+      "Lenovo L71081",
+      "Legion Y90"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2460,
+        ratio: "20.5:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 10500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "12"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Gen 1"
+    }
+  },
+  {
+    id: "lenovo-tab-p12-pro-2023",
+    brand: "Lenovo",
+    model: "Tab P12 Pro (2023)",
+    series: "Tab",
+    year: 2023,
+    uaContains: [
+      "Lenovo Tab P12 Pro",
+      "TB123FU"
+    ],
+    resolutions: [
+      {
+        w: 2560,
+        h: 1600,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 10400,
+    type: "tablet",
+    os: {
+      name: "android",
+      minVersion: "13"
+    },
+    cpu: {
+      brand: "MediaTek",
+      model: "Dimensity 7050"
+    }
+  },
+  {
+    id: "lenovo-legion-go",
+    brand: "Lenovo",
+    model: "Legion Go",
+    series: "Legion",
+    year: 2023,
+    uaContains: [
+      "Lenovo Legion Go",
+      "LENOVO Legion Go"
+    ],
+    resolutions: [
+      {
+        w: 2560,
+        h: 1600,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 1.5,
+    priority: 10300,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "AMD",
+      model: "Ryzen Z1 Extreme"
+    }
+  },
+  {
+    id: "lenovo-thinkpad-x1-carbon-gen10",
+    brand: "Lenovo",
+    model: "ThinkPad X1 Carbon Gen 10",
+    series: "ThinkPad",
+    year: 2022,
+    uaContains: [
+      "ThinkPad X1 Carbon Gen 10",
+      "21CB"
+    ],
+    resolutions: [
+      {
+        w: 2880,
+        h: 1800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 1.5,
+    priority: 10150,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core i7-1260P"
+    }
+  },
+  {
+    id: "lenovo-legion-y70",
+    brand: "Lenovo",
+    model: "Legion Y70",
+    series: "Legion",
+    year: 2022,
+    uaContains: [
+      "L71061",
+      "Lenovo L71061"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 1e4,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "12"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8+ Gen 1"
+    }
+  },
+  {
+    id: "lenovo-thinkpad-x1-carbon-gen9",
+    brand: "Lenovo",
+    model: "ThinkPad X1 Carbon Gen 9",
+    series: "ThinkPad",
+    year: 2021,
+    uaContains: [
+      "ThinkPad X1 Carbon Gen 9",
+      "20XW"
+    ],
+    resolutions: [
+      {
+        w: 3840,
+        h: 2160,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 1.5,
+    priority: 9900,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core i7-1185G7"
+    }
+  },
+  {
+    id: "lenovo-tab-p11-2021",
+    brand: "Lenovo",
+    model: "Tab P11 (2021)",
+    series: "Tab",
+    year: 2021,
+    uaContains: [
+      "Lenovo Tab P11",
+      "TB-J606F"
+    ],
+    resolutions: [
+      {
+        w: 2e3,
+        h: 1200,
+        ratio: "5:3"
+      }
+    ],
+    dpr: 2,
+    priority: 9850,
+    type: "tablet",
+    os: {
+      name: "android",
+      minVersion: "10"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 662"
+    }
+  },
+  {
+    id: "lenovo-legion-phone-duel-2",
+    brand: "Lenovo",
+    model: "Legion Phone Duel 2",
+    series: "Legion",
+    year: 2021,
+    uaContains: [
+      "L70081",
+      "Legion Phone Duel 2"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2460,
+        ratio: "20.5:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9800,
+    type: "phone"
+  },
+  {
+    id: "lenovo-thinkpad-x1-carbon-gen8",
+    brand: "Lenovo",
+    model: "ThinkPad X1 Carbon Gen 8",
+    series: "ThinkPad",
+    year: 2020,
+    uaContains: [
+      "ThinkPad X1 Carbon Gen 8",
+      "20U9"
+    ],
+    resolutions: [
+      {
+        w: 3840,
+        h: 2160,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 1.5,
+    priority: 9700,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core i7-10510U"
+    }
+  },
+  {
+    id: "lenovo-legion-phone-duel",
+    brand: "Lenovo",
+    model: "Legion Phone Duel",
+    series: "Legion",
+    year: 2020,
+    uaContains: [
+      "Lenovo L79031",
+      "Legion Phone Duel"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9600,
+    type: "phone"
+  },
+  {
+    id: "lenovo-z5-pro-gt",
+    brand: "Lenovo",
+    model: "Z5 Pro GT",
+    series: "Z",
+    year: 2019,
+    uaContains: [
+      "Lenovo L78032",
+      "Z5 Pro GT"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2340,
+        ratio: "19.5:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9550,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "8.1"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 855"
+    }
+  },
+  {
+    id: "lenovo-thinkpad-x1-carbon-gen7",
+    brand: "Lenovo",
+    model: "ThinkPad X1 Carbon Gen 7",
+    series: "ThinkPad",
+    year: 2019,
+    uaContains: [
+      "ThinkPad X1 Carbon Gen 7",
+      "20QD"
+    ],
+    resolutions: [
+      {
+        w: 3840,
+        h: 2160,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 1.5,
+    priority: 9500,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core i7-10710U"
+    }
+  },
+  {
+    id: "lenovo-tab-m10-2018",
+    brand: "Lenovo",
+    model: "Tab M10 (2018)",
+    series: "Tab",
+    year: 2018,
+    uaContains: [
+      "Lenovo Tab M10",
+      "TB-X605F"
+    ],
+    resolutions: [
+      {
+        w: 1920,
+        h: 1200,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 2,
+    priority: 9420,
+    type: "tablet",
+    os: {
+      name: "android",
+      minVersion: "8"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 450"
+    }
+  },
+  {
+    id: "lenovo-z5",
+    brand: "Lenovo",
+    model: "Z5",
+    series: "Z",
+    year: 2018,
+    uaContains: [
+      "Lenovo L78011",
+      "Z5"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2246,
+        ratio: "19:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9400,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "8.1"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 636"
+    }
+  },
+  {
+    id: "lenovo-thinkpad-x1-carbon-gen6",
+    brand: "Lenovo",
+    model: "ThinkPad X1 Carbon Gen 6",
+    series: "ThinkPad",
+    year: 2018,
+    uaContains: [
+      "ThinkPad X1 Carbon Gen 6",
+      "20KG"
+    ],
+    resolutions: [
+      {
+        w: 2560,
+        h: 1440,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 1.5,
+    priority: 9400,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core i7-8650U"
+    }
+  },
+  {
+    id: "lenovo-tab-4-10",
+    brand: "Lenovo",
+    model: "Tab 4 10",
+    series: "Tab",
+    year: 2017,
+    uaContains: [
+      "Lenovo Tab 4 10",
+      "TB-X304F"
+    ],
+    resolutions: [
+      {
+        w: 1280,
+        h: 800,
+        ratio: "16:10"
+      }
+    ],
+    dpr: 1.5,
+    priority: 9320,
+    type: "tablet",
+    os: {
+      name: "android",
+      minVersion: "7"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 425"
+    }
+  },
+  {
+    id: "lenovo-k8-note",
+    brand: "Lenovo",
+    model: "K8 Note",
+    series: "K",
+    year: 2017,
+    uaContains: [
+      "Lenovo K8 Note",
+      "XT1902-3"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 1920,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9300,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "7.1"
+    },
+    cpu: {
+      brand: "MediaTek",
+      model: "Helio X23"
+    }
+  },
+  {
+    id: "lenovo-thinkpad-x1-carbon-gen5",
+    brand: "Lenovo",
+    model: "ThinkPad X1 Carbon Gen 5",
+    series: "ThinkPad",
+    year: 2017,
+    uaContains: [
+      "ThinkPad X1 Carbon Gen 5",
+      "20HR"
+    ],
+    resolutions: [
+      {
+        w: 2560,
+        h: 1440,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 1.5,
+    priority: 9300,
+    type: "laptop",
+    os: {
+      name: "windows",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Intel",
+      model: "Core i7-7600U"
+    }
+  }
+];
+export {
+  o as default
+};

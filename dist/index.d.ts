@@ -33,5 +33,9 @@ declare const detector: {
     readonly getMediaDevicesFingerprint: () => Promise<string>;
     readonly _db: ModelRule[];
 };
+export declare function prepareDetectorForUA(ua: string, options?: {
+    fallbackLoadAll?: boolean;
+}): Promise<void>;
+export declare function preloadAllDevices(): Promise<void>;
 export { createDetector, detector, deviceLoader };
 export type { DetectionResult, DeviceType, ModelRule };

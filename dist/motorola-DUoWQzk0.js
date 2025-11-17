@@ -1,0 +1,1054 @@
+const o = [
+  {
+    id: "motorola-edge-60-pro",
+    brand: "Motorola",
+    model: "Edge 60 Pro",
+    series: "Edge",
+    year: 2025,
+    uaContains: [
+      "Edge 60 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1220,
+        h: 2712,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 3,
+    priority: 12e3,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Gen 4"
+    }
+  },
+  {
+    id: "motorola-razr-60-ultra",
+    brand: "Motorola",
+    model: "Razr 60 Ultra",
+    series: "Razr",
+    year: 2025,
+    uaContains: [
+      "Razr 60 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2640,
+        ratio: "22:9"
+      },
+      {
+        w: 1272,
+        h: 1080,
+        ratio: "21:9"
+      }
+    ],
+    dpr: 3,
+    priority: 11900,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Elite"
+    }
+  },
+  {
+    id: "motorola-edge-60",
+    brand: "Motorola",
+    model: "Edge 60",
+    series: "Edge",
+    year: 2025,
+    uaContains: [
+      "Edge 60"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 11800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 7 Gen 3"
+    }
+  },
+  {
+    id: "motorola-moto-g86",
+    brand: "Motorola",
+    model: "Moto G86",
+    series: "Moto G",
+    year: 2025,
+    uaContains: [
+      "Moto G86"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 11700,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "15"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 7s Gen 3"
+    }
+  },
+  {
+    id: "motorola-edge-50-ultra",
+    brand: "Motorola",
+    model: "Edge 50 Ultra",
+    series: "Edge",
+    year: 2024,
+    uaContains: [
+      "XT2483-1",
+      "Edge 50 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1220,
+        h: 2712,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 3,
+    priority: 11600,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8s Gen 3"
+    }
+  },
+  {
+    id: "motorola-edge-50-pro",
+    brand: "Motorola",
+    model: "Edge 50 Pro",
+    series: "Edge",
+    year: 2024,
+    uaContains: [
+      "XT2403-1",
+      "Edge 50 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1220,
+        h: 2712,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 3,
+    priority: 11500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 7 Gen 3"
+    }
+  },
+  {
+    id: "motorola-razr-50-ultra",
+    brand: "Motorola",
+    model: "Razr 50 Ultra",
+    series: "Razr",
+    year: 2024,
+    uaContains: [
+      "XT2451-1",
+      "Razr 50 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2640,
+        ratio: "22:9"
+      },
+      {
+        w: 1272,
+        h: 1080,
+        ratio: "21:9"
+      }
+    ],
+    dpr: 3,
+    priority: 11400,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8s Gen 3"
+    }
+  },
+  {
+    id: "motorola-moto-g85",
+    brand: "Motorola",
+    model: "Moto G85",
+    series: "Moto G",
+    year: 2024,
+    uaContains: [
+      "XT2437-1",
+      "Moto G85"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 11300,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "14"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 6s Gen 3"
+    }
+  },
+  {
+    id: "motorola-edge-40-pro",
+    brand: "Motorola",
+    model: "Edge 40 Pro",
+    series: "Edge",
+    year: 2023,
+    uaContains: [
+      "XT2301-4",
+      "Edge 40 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 1e4,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "13"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8 Gen 2"
+    }
+  },
+  {
+    id: "motorola-edge-40",
+    brand: "Motorola",
+    model: "Edge 40",
+    series: "Edge",
+    year: 2023,
+    uaContains: [
+      "XT2303-1",
+      "Edge 40"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 10100,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "13"
+    },
+    cpu: {
+      brand: "MediaTek",
+      model: "Dimensity 8020"
+    }
+  },
+  {
+    id: "motorola-edge-30-ultra",
+    brand: "Motorola",
+    model: "Edge 30 Ultra",
+    series: "Edge",
+    year: 2022,
+    uaContains: [
+      "XT2241-1",
+      "Edge 30 Ultra"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "12"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 8+ Gen 1"
+    }
+  },
+  {
+    id: "motorola-moto-g82",
+    brand: "Motorola",
+    model: "Moto G82",
+    series: "Moto G",
+    year: 2022,
+    uaContains: [
+      "XT2225-2",
+      "Moto G82"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "12"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 695"
+    }
+  },
+  {
+    id: "motorola-edge-20-pro",
+    brand: "Motorola",
+    model: "Edge 20 Pro",
+    series: "Edge",
+    year: 2021,
+    uaContains: [
+      "XT2153-1",
+      "Edge 20 Pro"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9300,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 870"
+    }
+  },
+  {
+    id: "motorola-defy-2021",
+    brand: "Motorola",
+    model: "Defy (2021)",
+    series: "Defy",
+    year: 2021,
+    uaContains: [
+      "XT2083-9",
+      "Defy"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1600,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9e3,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "10"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 662"
+    }
+  },
+  {
+    id: "motorola-moto-g-power-2021",
+    brand: "Motorola",
+    model: "Moto G Power (2021)",
+    series: "Moto G",
+    year: 2021,
+    uaContains: [
+      "XT2115-3",
+      "Moto G Power"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1600,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 9200,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 662"
+    }
+  },
+  {
+    id: "motorola-edge-20",
+    brand: "Motorola",
+    model: "Edge 20",
+    series: "Edge",
+    year: 2021,
+    uaContains: [
+      "XT2143-1",
+      "Edge 20"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9400,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 778G"
+    }
+  },
+  {
+    id: "motorola-moto-g-stylus-2021",
+    brand: "Motorola",
+    model: "Moto G Stylus (2021)",
+    series: "Moto G",
+    year: 2021,
+    uaContains: [
+      "XT2115-1",
+      "Moto G Stylus"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9100,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 678"
+    }
+  },
+  {
+    id: "motorola-edge-30",
+    brand: "Motorola",
+    model: "Edge 30",
+    series: "Edge",
+    year: 2022,
+    uaContains: [
+      "XT2205-1",
+      "Edge 30"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9700,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "12"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 778G+"
+    }
+  },
+  {
+    id: "motorola-moto-g-stylus-5g-2022",
+    brand: "Motorola",
+    model: "Moto G Stylus 5G (2022)",
+    series: "Moto G",
+    year: 2022,
+    uaContains: [
+      "XT2215-2",
+      "Moto G Stylus 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 9600,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "12"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 695"
+    }
+  },
+  {
+    id: "motorola-edge-20-lite",
+    brand: "Motorola",
+    model: "Edge 20 Lite",
+    series: "Edge",
+    year: 2021,
+    uaContains: [
+      "XT2155-1",
+      "Edge 20 Lite"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 8800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "MediaTek",
+      model: "Dimensity 720"
+    }
+  },
+  {
+    id: "motorola-moto-g-10-power",
+    brand: "Motorola",
+    model: "Moto G10 Power",
+    series: "Moto G",
+    year: 2021,
+    uaContains: [
+      "XT2128-1",
+      "Moto G10 Power"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1640,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 8700,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "11"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 662"
+    }
+  },
+  {
+    id: "motorola-moto-g9-power",
+    brand: "Motorola",
+    model: "Moto G9 Power",
+    series: "Moto G",
+    year: 2020,
+    uaContains: [
+      "XT2091-1",
+      "Moto G9 Power"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1640,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 8600,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "10"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 662"
+    }
+  },
+  {
+    id: "motorola-moto-g-pro-5g",
+    brand: "Motorola",
+    model: "Moto G 5G (2020)",
+    series: "Moto G",
+    year: 2020,
+    uaContains: [
+      "XT2043-1",
+      "Moto G 5G"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 8500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "10"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 750G"
+    }
+  },
+  {
+    id: "motorola-one-5g-ace",
+    brand: "Motorola",
+    model: "One 5G Ace",
+    series: "One",
+    year: 2020,
+    uaContains: [
+      "XT2071-3",
+      "One 5G Ace"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2400,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 8400,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "10"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 750G"
+    }
+  },
+  {
+    id: "motorola-moto-g8-power",
+    brand: "Motorola",
+    model: "Moto G8 Power",
+    series: "Moto G",
+    year: 2020,
+    uaContains: [
+      "XT2041-1",
+      "Moto G8 Power"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2280,
+        ratio: "19:9"
+      }
+    ],
+    dpr: 2.5,
+    priority: 8300,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "10"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 665"
+    }
+  },
+  {
+    id: "motorola-moto-g9-play",
+    brand: "Motorola",
+    model: "Moto G9 Play",
+    series: "Moto G",
+    year: 2020,
+    uaContains: [
+      "XT2083-1",
+      "Moto G9 Play"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1640,
+        ratio: "20:9"
+      }
+    ],
+    dpr: 2,
+    priority: 8200,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "10"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 662"
+    }
+  },
+  {
+    id: "motorola-moto-g7-plus",
+    brand: "Motorola",
+    model: "Moto G7 Plus",
+    series: "Moto G",
+    year: 2019,
+    uaContains: [
+      "XT1965-2",
+      "Moto G7 Plus"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2270,
+        ratio: "19:9"
+      }
+    ],
+    dpr: 2.75,
+    priority: 8100,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "9"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 636"
+    }
+  },
+  {
+    id: "motorola-moto-g7-power",
+    brand: "Motorola",
+    model: "Moto G7 Power",
+    series: "Moto G",
+    year: 2019,
+    uaContains: [
+      "XT1955",
+      "Moto G7 Power"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1570,
+        ratio: "19:9"
+      }
+    ],
+    dpr: 2,
+    priority: 8e3,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "9"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 632"
+    }
+  },
+  {
+    id: "motorola-moto-g7",
+    brand: "Motorola",
+    model: "Moto G7",
+    series: "Moto G",
+    year: 2019,
+    uaContains: [
+      "XT1952",
+      "Moto G7"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2270,
+        ratio: "19:9"
+      }
+    ],
+    dpr: 2.75,
+    priority: 7900,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "9"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 632"
+    }
+  },
+  {
+    id: "motorola-moto-g7-play",
+    brand: "Motorola",
+    model: "Moto G7 Play",
+    series: "Moto G",
+    year: 2019,
+    uaContains: [
+      "XT1922-2",
+      "Moto G7 Play"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1512,
+        ratio: "19:9"
+      }
+    ],
+    dpr: 2.75,
+    priority: 7800,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "9"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 425"
+    }
+  },
+  {
+    id: "motorola-moto-g6-plus",
+    brand: "Motorola",
+    model: "Moto G6 Plus",
+    series: "Moto G",
+    year: 2018,
+    uaContains: [
+      "XT1922-1",
+      "Moto G6 Plus"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2160,
+        ratio: "18:9"
+      }
+    ],
+    dpr: 2,
+    priority: 7700,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "8"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 636"
+    }
+  },
+  {
+    id: "motorola-moto-g6",
+    brand: "Motorola",
+    model: "Moto G6",
+    series: "Moto G",
+    year: 2018,
+    uaContains: [
+      "XT1922",
+      "Moto G6"
+    ],
+    resolutions: [
+      {
+        w: 1080,
+        h: 2160,
+        ratio: "18:9"
+      }
+    ],
+    dpr: 2,
+    priority: 7600,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "8"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 450"
+    }
+  },
+  {
+    id: "motorola-moto-g6-play",
+    brand: "Motorola",
+    model: "Moto G6 Play",
+    series: "Moto G",
+    year: 2018,
+    uaContains: [
+      "XT1922-3",
+      "Moto G6 Play"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1280,
+        ratio: "16:9"
+      }
+    ],
+    dpr: 2,
+    priority: 7500,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "8"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 425"
+    }
+  },
+  {
+    id: "motorola-moto-e5-plus",
+    brand: "Motorola",
+    model: "Moto E5 Plus",
+    series: "Moto E",
+    year: 2018,
+    uaContains: [
+      "XT1924-1",
+      "Moto E5 Plus"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1440,
+        ratio: "18:9"
+      }
+    ],
+    dpr: 2,
+    priority: 7400,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "8"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 435"
+    }
+  },
+  {
+    id: "motorola-moto-e5-play",
+    brand: "Motorola",
+    model: "Moto E5 Play",
+    series: "Moto E",
+    year: 2018,
+    uaContains: [
+      "XT1922-4",
+      "Moto E5 Play"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1440,
+        ratio: "18:9"
+      }
+    ],
+    dpr: 2,
+    priority: 7300,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "8"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 425"
+    }
+  },
+  {
+    id: "motorola-moto-e5-cruise",
+    brand: "Motorola",
+    model: "Moto E5 Cruise",
+    series: "Moto E",
+    year: 2018,
+    uaContains: [
+      "Moto E5 Cruise"
+    ],
+    resolutions: [
+      {
+        w: 720,
+        h: 1440,
+        ratio: "18:9"
+      }
+    ],
+    dpr: 2,
+    priority: 7200,
+    type: "phone",
+    os: {
+      name: "android",
+      minVersion: "8"
+    },
+    cpu: {
+      brand: "Qualcomm",
+      model: "Snapdragon 425"
+    }
+  }
+];
+export {
+  o as default
+};

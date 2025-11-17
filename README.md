@@ -56,6 +56,27 @@ setTimeout(async () => {
 }, 100);
 ```
 
+## ⚡ 性能与加载策略
+
+- **默认行为**：`deviceLoader.initialize()` 会一次性加载 `./devices/**/*.json`，打包后核心检测器约 `24 KB`（gzip），每个品牌包拆成独立 chunk（≈0.6–3 KB gzip）。对需要离线或批量检测的场景最简单。
+- **懒加载模式**：若希望按需加载，可显式调用 `deviceLoader.initialize({ preloadAll: false })`，然后基于 UA 调用 `deviceLoader.loadDevicesForUA(ua)`。库会根据 UA 命中的品牌关键词只加载对应 JSON。
+- **UA 命中率**：内置 `BRAND_HINTS` 会识别 Apple、Samsung、Huawei、Xiaomi 等 20+ 品牌关键词，未命中时再尝试文件名匹配，仍然可以回退到 `fallbackLoadAll`.
+- **推荐策略**：实时业务中，先按需加载（<50ms 内只请求一两个 brand chunk），当用户流量稳定后可在空闲期调用 `deviceLoader.initialize({ preloadAll: true })` 将剩余品牌缓存到本地。
+
+```ts
+import { detector, deviceLoader } from 'get-fingerprint-id';
+
+await deviceLoader.initialize({ preloadAll: false }); // 只构建品牌索引
+
+const ua = navigator.userAgent;
+await deviceLoader.loadDevicesForUA(ua, { fallbackLoadAll: true });
+
+// 把当前已加载的设备注入 detector
+detector.loadModelDB(deviceLoader.getAllDevices());
+
+const result = detector.detectDevice(ua, screen.width, screen.height);
+```
+
 ### 在浏览器中使用
 
 ```html
@@ -375,17 +396,17 @@ const fingerprints = await Promise.all(
 ```javascript
 import { deviceLoader } from 'get-fingerprint-id';
 
-// 等待设备数据库加载完成
+// 模式1：一次性加载（默认）
 await deviceLoader.initialize();
+console.log(`已加载 ${deviceLoader.getAllDevices().length} 个设备`);
 
-// 获取所有设备
-const allDevices = deviceLoader.getAllDevices();
-console.log(`已加载 ${allDevices.length} 个设备`);
+// 模式2：按需加载
+await deviceLoader.initialize({ preloadAll: false });
+const brandsLoaded = await deviceLoader.loadDevicesForUA(navigator.userAgent, { fallbackLoadAll: true });
+console.log('已按需加载品牌：', brandsLoaded, deviceLoader.getLoadedBrands());
 
-// 根据品牌查找设备
+// 进一步操作
 const appleDevices = deviceLoader.findDevicesByBrand('Apple');
-
-// 根据ID获取设备
 const device = deviceLoader.getDeviceById('iphone-15-pro');
 ```
 
