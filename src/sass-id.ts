@@ -24,6 +24,41 @@ export interface ModelRule {
   };
 }
 
+type PreparedRule = ModelRule & {
+  _prepared?: true;
+  uaContainsLower?: string[];
+  uaRegexObjects?: RegExp[];
+  modelLower?: string;
+  brandLower?: string;
+};
+
+function prepareRule(rule: ModelRule): PreparedRule {
+  if ((rule as PreparedRule)._prepared) {
+    return rule as PreparedRule;
+  }
+
+  const uaContainsLower = rule.uaContains?.map(s => s.toLowerCase());
+  const uaRegexObjects = rule.uaRegex
+    ?.map(pattern => {
+      try {
+        return new RegExp(pattern, 'i');
+      } catch (error) {
+        console.warn(`Invalid UA regex pattern "${pattern}" for rule ${rule.id || rule.model}:`, error);
+        return undefined;
+      }
+    })
+    .filter((regex): regex is RegExp => Boolean(regex));
+
+  return {
+    ...rule,
+    _prepared: true,
+    uaContainsLower,
+    uaRegexObjects,
+    modelLower: rule.model?.toLowerCase(),
+    brandLower: rule.brand.toLowerCase()
+  };
+}
+
 export interface BrowserInfo {
   name: string;
   version: string;
@@ -433,10 +468,10 @@ function simpleHash(str: string): string {
 
 // --------------------------- Core Detector ---------------------------
 export function createDetector(initialDB: ModelRule[] = []) {
-  const db: ModelRule[] = [...initialDB];
+  const db: PreparedRule[] = initialDB.map(prepareRule);
 
-  function addRule(rule: ModelRule) { db.push(rule); }
-  function loadModelDB(rules: ModelRule[]) { db.push(...rules); }
+  function addRule(rule: ModelRule) { db.push(prepareRule(rule)); }
+  function loadModelDB(rules: ModelRule[]) { db.push(...rules.map(prepareRule)); }
   function clearDB() { db.length = 0; }
 
   function detectDevice(
@@ -447,7 +482,7 @@ export function createDetector(initialDB: ModelRule[] = []) {
   ): DetectionResult {
     const lowerUA = safeLower(ua);
     const candidates: Array<{ 
-      rule: ModelRule, 
+      rule: PreparedRule, 
       score: number, 
       uaMatch: boolean, 
       resolutionMatch: boolean,
@@ -472,8 +507,9 @@ export function createDetector(initialDB: ModelRule[] = []) {
       let deviceTypeMatched = false;
 
       // 检查 UA 包含
-      if (rule.uaContains && rule.uaContains.length > 0) {
-        const uaMatch = rule.uaContains.some(s => lowerUA.includes(s.toLowerCase()));
+      const uaContains = rule.uaContainsLower;
+      if (uaContains && uaContains.length > 0) {
+        const uaMatch = uaContains.some(s => lowerUA.includes(s));
         if (uaMatch) {
           score += 40; // 提高UA匹配权重
           uaMatched = true;
@@ -483,11 +519,9 @@ export function createDetector(initialDB: ModelRule[] = []) {
       }
 
       // 检查 UA 正则
-      if (!uaMatched && rule.uaRegex && rule.uaRegex.length > 0) {
-        const regexMatch = rule.uaRegex.some(rStr => {
-          try { return new RegExp(rStr, 'i').test(ua); }
-          catch { return false; }
-        });
+      const uaRegexList = rule.uaRegexObjects;
+      if (!uaMatched && uaRegexList && uaRegexList.length > 0) {
+        const regexMatch = uaRegexList.some(regex => regex.test(ua));
         if (regexMatch) {
           score += 40;
           uaMatched = true;
@@ -556,11 +590,14 @@ export function createDetector(initialDB: ModelRule[] = []) {
         }
 
         // 设备类型启发式匹配
-        const isLikelyMatch = (rule.model?.toLowerCase().includes('mac') && (detectedDeviceType === 'desktop' || detectedDeviceType === 'laptop')) ||
-          (rule.model?.toLowerCase().includes('macbook') && (detectedDeviceType === 'desktop' || detectedDeviceType === 'laptop')) ||
-          (rule.model?.toLowerCase().includes('iphone') && (detectedDeviceType === 'mobile' || detectedDeviceType === 'phone')) ||
-          (rule.model?.toLowerCase().includes('ipad') && detectedDeviceType === 'tablet') ||
-          (rule.model?.toLowerCase().includes('laptop') && (detectedDeviceType === 'desktop' || detectedDeviceType === 'laptop'));
+        const modelLower = rule.modelLower;
+        const isLikelyMatch = !!modelLower && (
+          (modelLower.includes('mac') && (detectedDeviceType === 'desktop' || detectedDeviceType === 'laptop')) ||
+          (modelLower.includes('macbook') && (detectedDeviceType === 'desktop' || detectedDeviceType === 'laptop')) ||
+          (modelLower.includes('iphone') && (detectedDeviceType === 'mobile' || detectedDeviceType === 'phone')) ||
+          (modelLower.includes('ipad') && detectedDeviceType === 'tablet') ||
+          (modelLower.includes('laptop') && (detectedDeviceType === 'desktop' || detectedDeviceType === 'laptop'))
+        );
         if (isLikelyMatch) {
           score += 5;
         }
@@ -640,9 +677,10 @@ export function createDetector(initialDB: ModelRule[] = []) {
 
         // 品牌和型号的启发式匹配
         if (osInfo) {
-          if (osInfo.includes('iOS') && rule.brand.toLowerCase() === 'apple') {
+          const brandLower = rule.brandLower;
+          if (osInfo.includes('iOS') && brandLower === 'apple') {
             score += 10;
-          } else if (osInfo.includes('Android') && rule.brand.toLowerCase() !== 'apple') {
+          } else if (osInfo.includes('Android') && brandLower !== 'apple') {
             score += 5;
           }
         }

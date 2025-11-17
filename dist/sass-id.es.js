@@ -1,4 +1,4 @@
-const Z = [
+const j = [
   {
     id: "iphone-17",
     brand: "Apple",
@@ -1620,10 +1620,10 @@ const Z = [
     priority: 8350,
     type: "phone"
   }
-], D = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], W = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Z
-}, Symbol.toStringTag, { value: "Module" })), z = [
+  default: j
+}, Symbol.toStringTag, { value: "Module" })), Y = [
   {
     id: "asus-rog-phone-9-pro",
     brand: "ASUS",
@@ -2175,10 +2175,10 @@ const Z = [
       model: "Snapdragon 630"
     }
   }
-], K = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], J = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: z
-}, Symbol.toStringTag, { value: "Module" })), j = [
+  default: Y
+}, Symbol.toStringTag, { value: "Module" })), $ = [
   {
     id: "black-shark-7-pro",
     brand: "Black Shark",
@@ -2516,10 +2516,10 @@ const Z = [
       model: "Snapdragon 845"
     }
   }
-], W = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], q = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: j
-}, Symbol.toStringTag, { value: "Module" })), Y = [
+  default: $
+}, Symbol.toStringTag, { value: "Module" })), oo = [
   {
     id: "google-pixel-10-pro-fold",
     brand: "Google",
@@ -3463,10 +3463,10 @@ const Z = [
       model: "Snapdragon 821"
     }
   }
-], J = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], eo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Y
-}, Symbol.toStringTag, { value: "Module" })), $ = [
+  default: oo
+}, Symbol.toStringTag, { value: "Module" })), io = [
   {
     id: "honor-magic8-pro",
     brand: "Honor",
@@ -4307,10 +4307,10 @@ const Z = [
       model: "Kirin 659"
     }
   }
-], q = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], ro = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: $
-}, Symbol.toStringTag, { value: "Module" })), oo = [
+  default: io
+}, Symbol.toStringTag, { value: "Module" })), no = [
   {
     id: "huawei-mate-70-pro-plus",
     brand: "Huawei",
@@ -5248,10 +5248,10 @@ const Z = [
     priority: 2200,
     type: "tablet"
   }
-], eo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], ao = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: oo
-}, Symbol.toStringTag, { value: "Module" })), io = [
+  default: no
+}, Symbol.toStringTag, { value: "Module" })), so = [
   {
     id: "infinix-gt-30-pro",
     brand: "Infinix",
@@ -6002,10 +6002,10 @@ const Z = [
       model: "Helio P25"
     }
   }
-], ro = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], to = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: io
-}, Symbol.toStringTag, { value: "Module" })), no = [
+  default: so
+}, Symbol.toStringTag, { value: "Module" })), po = [
   {
     id: "itel-a80",
     brand: "itel",
@@ -6601,10 +6601,10 @@ const Z = [
       model: "MT6580"
     }
   }
-], ao = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], lo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: no
-}, Symbol.toStringTag, { value: "Module" })), so = [
+  default: po
+}, Symbol.toStringTag, { value: "Module" })), mo = [
   {
     id: "lenovo-legion-tab-gen-3-2025",
     brand: "Lenovo",
@@ -7314,10 +7314,10 @@ const Z = [
       model: "Core i7-7600U"
     }
   }
-], to = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], uo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: so
-}, Symbol.toStringTag, { value: "Module" })), po = [
+  default: mo
+}, Symbol.toStringTag, { value: "Module" })), yo = [
   {
     id: "meizu-22",
     brand: "Meizu",
@@ -7940,10 +7940,10 @@ const Z = [
       model: "Exynos 7420"
     }
   }
-], lo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], ho = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: po
-}, Symbol.toStringTag, { value: "Module" })), mo = [
+  default: yo
+}, Symbol.toStringTag, { value: "Module" })), bo = [
   {
     id: "motorola-edge-60-pro",
     brand: "Motorola",
@@ -8993,10 +8993,10 @@ const Z = [
       model: "Snapdragon 425"
     }
   }
-], uo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], co = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: mo
-}, Symbol.toStringTag, { value: "Module" })), yo = [
+  default: bo
+}, Symbol.toStringTag, { value: "Module" })), Po = [
   {
     id: "nothing-phone-3-pro",
     brand: "Nothing",
@@ -9303,10 +9303,10 @@ const Z = [
     ],
     type: "earphone"
   }
-], ho = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], go = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: yo
-}, Symbol.toStringTag, { value: "Module" })), bo = [
+  default: Po
+}, Symbol.toStringTag, { value: "Module" })), Co = [
   {
     id: "nubia-z70-ultra",
     brand: "nubia",
@@ -9771,10 +9771,10 @@ const Z = [
       model: "Snapdragon 855+"
     }
   }
-], co = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], So = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: bo
-}, Symbol.toStringTag, { value: "Module" })), Po = [
+  default: Co
+}, Symbol.toStringTag, { value: "Module" })), wo = [
   {
     id: "oneplus-15",
     brand: "OnePlus",
@@ -11012,10 +11012,10 @@ const Z = [
       model: "Snapdragon 801"
     }
   }
-], go = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], xo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Po
-}, Symbol.toStringTag, { value: "Module" })), Co = [
+  default: wo
+}, Symbol.toStringTag, { value: "Module" })), Go = [
   {
     id: "oppo-find-x",
     brand: "OPPO",
@@ -12320,10 +12320,10 @@ const Z = [
       model: "Snapdragon 680"
     }
   }
-], So = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], Mo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Co
-}, Symbol.toStringTag, { value: "Module" })), wo = [
+  default: Go
+}, Symbol.toStringTag, { value: "Module" })), Vo = [
   {
     id: "realme-gt8-pro",
     brand: "realme",
@@ -13049,10 +13049,10 @@ const Z = [
       model: "Dimensity 810"
     }
   }
-], xo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], Ao = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: wo
-}, Symbol.toStringTag, { value: "Module" })), Go = [
+  default: Vo
+}, Symbol.toStringTag, { value: "Module" })), vo = [
   {
     id: "samsung-galaxy-s24-ultra",
     brand: "Samsung",
@@ -15616,10 +15616,10 @@ const Z = [
     priority: 7350,
     type: "phone"
   }
-], Mo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], Xo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Go
-}, Symbol.toStringTag, { value: "Module" })), Vo = [
+  default: vo
+}, Symbol.toStringTag, { value: "Module" })), Oo = [
   {
     id: "sony-xperia-1-vii",
     brand: "Sony",
@@ -16374,10 +16374,10 @@ const Z = [
       model: "Snapdragon 835"
     }
   }
-], Ao = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], To = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Vo
-}, Symbol.toStringTag, { value: "Module" })), vo = [
+  default: Oo
+}, Symbol.toStringTag, { value: "Module" })), fo = [
   {
     id: "tecno-camon-40-pro-5g",
     brand: "Tecno",
@@ -17278,10 +17278,10 @@ const Z = [
       model: "MT6580"
     }
   }
-], Xo = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], ko = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: vo
-}, Symbol.toStringTag, { value: "Module" })), Oo = [
+  default: fo
+}, Symbol.toStringTag, { value: "Module" })), Qo = [
   {
     id: "vivo-x100-pro",
     brand: "vivo",
@@ -18966,10 +18966,10 @@ const Z = [
       model: "Snapdragon 200"
     }
   }
-], To = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], No = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Oo
-}, Symbol.toStringTag, { value: "Module" })), fo = [
+  default: Qo
+}, Symbol.toStringTag, { value: "Module" })), Eo = [
   {
     id: "xiaomi-14-ultra",
     brand: "Xiaomi",
@@ -21213,10 +21213,10 @@ const Z = [
       model: "Core Ultra 5 220H"
     }
   }
-], ko = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], Ro = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: fo
-}, Symbol.toStringTag, { value: "Module" })), Qo = [
+  default: Eo
+}, Symbol.toStringTag, { value: "Module" })), Uo = [
   {
     id: "zte-axon-60-ultra",
     brand: "ZTE",
@@ -21876,74 +21876,94 @@ const Z = [
       model: "Snapdragon 653"
     }
   }
-], No = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+], Io = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Qo
+  default: Uo
 }, Symbol.toStringTag, { value: "Module" }));
-class Eo {
+class Ho {
   devices = /* @__PURE__ */ new Map();
   initialized = !1;
   async initialize() {
     if (!this.initialized)
       try {
-        const e = /* @__PURE__ */ Object.assign({ "./devices/phones/apple.json": D, "./devices/phones/asus.json": K, "./devices/phones/blackshark.json": W, "./devices/phones/google.json": J, "./devices/phones/honor.json": q, "./devices/phones/huawei.json": eo, "./devices/phones/infinix.json": ro, "./devices/phones/itel.json": ao, "./devices/phones/lenovo.json": to, "./devices/phones/meizu.json": lo, "./devices/phones/motorola.json": uo, "./devices/phones/nothing.json": ho, "./devices/phones/nubia.json": co, "./devices/phones/oneplus.json": go, "./devices/phones/oppo.json": So, "./devices/phones/realme.json": xo, "./devices/phones/samsung.json": Mo, "./devices/phones/sony.json": Ao, "./devices/phones/tecno.json": Xo, "./devices/phones/vivo.json": To, "./devices/phones/xiaomi.json": ko, "./devices/phones/zte.json": No });
-        for (const n in e)
+        const o = /* @__PURE__ */ Object.assign({ "./devices/phones/apple.json": W, "./devices/phones/asus.json": J, "./devices/phones/blackshark.json": q, "./devices/phones/google.json": eo, "./devices/phones/honor.json": ro, "./devices/phones/huawei.json": ao, "./devices/phones/infinix.json": to, "./devices/phones/itel.json": lo, "./devices/phones/lenovo.json": uo, "./devices/phones/meizu.json": ho, "./devices/phones/motorola.json": co, "./devices/phones/nothing.json": go, "./devices/phones/nubia.json": So, "./devices/phones/oneplus.json": xo, "./devices/phones/oppo.json": Mo, "./devices/phones/realme.json": Ao, "./devices/phones/samsung.json": Xo, "./devices/phones/sony.json": To, "./devices/phones/tecno.json": ko, "./devices/phones/vivo.json": No, "./devices/phones/xiaomi.json": Ro, "./devices/phones/zte.json": Io });
+        for (const n in o)
           try {
-            (e[n].default || []).forEach((u) => {
-              if (!u.id || !u.brand || !u.model) {
-                console.warn(`Invalid device data in ${n}:`, u);
+            (o[n].default || []).forEach((l) => {
+              if (!l.id || !l.brand || !l.model) {
+                console.warn(`Invalid device data in ${n}:`, l);
                 return;
               }
-              this.devices.set(u.id, u);
+              this.devices.set(l.id, l);
             });
-          } catch (d) {
-            console.error(`Error loading devices from ${n}:`, d);
+          } catch (a) {
+            console.error(`Error loading devices from ${n}:`, a);
           }
         this.initialized = !0, console.log(`Loaded ${this.devices.size} devices`);
-      } catch (e) {
-        console.error("Failed to load device data:", e);
+      } catch (o) {
+        console.error("Failed to load device data:", o);
       }
   }
-  getDeviceById(e) {
-    return this.devices.get(e);
+  getDeviceById(o) {
+    return this.devices.get(o);
   }
-  findDevicesByBrand(e) {
-    return Array.from(this.devices.values()).filter((n) => n.brand.toLowerCase() === e.toLowerCase());
+  findDevicesByBrand(o) {
+    return Array.from(this.devices.values()).filter((n) => n.brand.toLowerCase() === o.toLowerCase());
   }
   getAllDevices() {
     return Array.from(this.devices.values());
   }
-  addDevice(e) {
-    if (!e.id)
+  addDevice(o) {
+    if (!o.id)
       throw new Error("Device must have an id");
-    this.devices.set(e.id, e);
+    this.devices.set(o.id, o);
   }
-  addDevices(e) {
-    e.forEach((n) => this.addDevice(n));
+  addDevices(o) {
+    o.forEach((n) => this.addDevice(n));
   }
 }
-const k = new Eo();
-k.initialize().catch(console.error);
-function Ro(r) {
-  return (r || "").toLowerCase();
+const N = new Ho();
+N.initialize().catch(console.error);
+function f(i) {
+  if (i._prepared)
+    return i;
+  const o = i.uaContains?.map((a) => a.toLowerCase()), n = i.uaRegex?.map((a) => {
+    try {
+      return new RegExp(a, "i");
+    } catch (l) {
+      console.warn(`Invalid UA regex pattern "${a}" for rule ${i.id || i.model}:`, l);
+      return;
+    }
+  }).filter((a) => !!a);
+  return {
+    ...i,
+    _prepared: !0,
+    uaContainsLower: o,
+    uaRegexObjects: n,
+    modelLower: i.model?.toLowerCase(),
+    brandLower: i.brand.toLowerCase()
+  };
 }
-function E(r, e, n) {
-  return !n.resolutions || !n.resolutions.length ? !1 : n.resolutions.some((d) => d.w === r && d.h === e);
+function Lo(i) {
+  return (i || "").toLowerCase();
 }
-function T(r, e) {
-  return r === void 0 || e.dpr === void 0 ? !0 : Math.abs(r - e.dpr) < 0.1;
+function I(i, o, n) {
+  return !n.resolutions || !n.resolutions.length ? !1 : n.resolutions.some((a) => a.w === i && a.h === o);
 }
-function f(r, e) {
-  if (!r || !e.os) return !0;
-  const n = e.os.name.toLowerCase(), d = r.toLowerCase();
-  return n === "ios" || n === "ipados" ? d.includes("ios") : n === "android" ? d.includes("android") : n === "windows" ? d.includes("windows") : n === "macos" || n === "mac os" ? d.includes("macos") || d.includes("mac os") : n === "harmonyos" ? d.includes("harmony") || d.includes("harmonyos") : !0;
+function k(i, o) {
+  return i === void 0 || o.dpr === void 0 ? !0 : Math.abs(i - o.dpr) < 0.1;
 }
-function Uo(r) {
-  const e = r.toLowerCase();
-  return /mobile|android|iphone|ipad|phone|blackberry|iemobile|mobi/.test(e) ? /ipad|tablet/.test(e) ? "tablet" : "mobile" : /tv|smarttv|googletv|appletv|hbbtv|pov-tv/.test(e) ? "tv" : /macbook|laptop|notebook|thinkpad|yoga|surface book|surface laptop/.test(e) ? "laptop" : "desktop";
+function Q(i, o) {
+  if (!i || !o.os) return !0;
+  const n = o.os.name.toLowerCase(), a = i.toLowerCase();
+  return n === "ios" || n === "ipados" ? a.includes("ios") : n === "android" ? a.includes("android") : n === "windows" ? a.includes("windows") : n === "macos" || n === "mac os" ? a.includes("macos") || a.includes("mac os") : n === "harmonyos" ? a.includes("harmony") || a.includes("harmonyos") : !0;
 }
-function R(r) {
-  const e = [
+function _o(i) {
+  const o = i.toLowerCase();
+  return /mobile|android|iphone|ipad|phone|blackberry|iemobile|mobi/.test(o) ? /ipad|tablet/.test(o) ? "tablet" : "mobile" : /tv|smarttv|googletv|appletv|hbbtv|pov-tv/.test(o) ? "tv" : /macbook|laptop|notebook|thinkpad|yoga|surface book|surface laptop/.test(o) ? "laptop" : "desktop";
+}
+function H(i) {
+  const o = [
     // 先检测特殊的浏览器，避免被 Chrome 误判
     { name: "GSA", regex: /GSA\/([0-9\.]+)/i, engine: "WebKit" },
     { name: "Edge", regex: /edg(?:e|ios|a)\/([0-9\.]+)/i, engine: "Blink" },
@@ -21957,39 +21977,39 @@ function R(r) {
     { name: "QQ Browser", regex: /(?:qqbrowser|mqqbrowser)\/([0-9\.]+)/i, engine: "Blink" },
     { name: "WeChat", regex: /micromessenger\/([0-9\.]+)/i, engine: "Blink" },
     { name: "Baidu", regex: /baidubrowser\/([0-9\.]+)/i, engine: "Blink" }
-  ], n = r.toLowerCase();
-  for (const d of e) {
-    const u = n.match(d.regex);
-    if (u) {
+  ], n = i.toLowerCase();
+  for (const a of o) {
+    const l = n.match(a.regex);
+    if (l) {
       let c;
-      if (d.engine === "Blink" || d.engine === "WebKit") {
+      if (a.engine === "Blink" || a.engine === "WebKit") {
         const g = n.match(/applewebkit\/([0-9\.]+)/i);
         c = g ? g[1] : void 0;
-      } else if (d.engine === "Gecko") {
+      } else if (a.engine === "Gecko") {
         const g = n.match(/rv:([0-9\.]+)/i);
         c = g ? g[1] : void 0;
       }
       return {
-        name: d.name,
-        version: u[1],
-        engine: d.engine,
+        name: a.name,
+        version: l[1],
+        engine: a.engine,
         engineVersion: c
       };
     }
   }
 }
-function Io(r) {
-  const e = r.toLowerCase();
-  if (/android/.test(e)) {
-    const n = e.match(/android\s*([0-9\._]+)/);
+function Fo(i) {
+  const o = i.toLowerCase();
+  if (/android/.test(o)) {
+    const n = o.match(/android\s*([0-9\._]+)/);
     return n ? `Android ${n[1].replace(/_/g, ".")}` : "Android";
   }
-  if (/iphone|ipad|ipod/.test(e)) {
-    const n = e.match(/os\s*([0-9\_]+)/i);
+  if (/iphone|ipad|ipod/.test(o)) {
+    const n = o.match(/os\s*([0-9\_]+)/i);
     return n ? `iOS ${n[1].replace(/_/g, ".")}` : "iOS";
   }
-  if (/windows nt/.test(e)) {
-    const n = e.match(/windows nt ([0-9\.]+)/i);
+  if (/windows nt/.test(o)) {
+    const n = o.match(/windows nt ([0-9\.]+)/i);
     return n ? `Windows ${{
       "10.0": "10/11",
       "6.3": "8.1",
@@ -21998,24 +22018,24 @@ function Io(r) {
       "6.0": "Vista"
     }[n[1]] || n[1]}` : "Windows";
   }
-  if (/mac os x/.test(e)) {
-    const n = e.match(/mac os x ([0-9_\.]+)/i);
+  if (/mac os x/.test(o)) {
+    const n = o.match(/mac os x ([0-9_\.]+)/i);
     return n ? `macOS ${n[1].replace(/_/g, ".")}` : "macOS";
   }
-  if (/linux/.test(e)) return "Linux";
+  if (/linux/.test(o)) return "Linux";
 }
-function U() {
+function L() {
   try {
-    const r = document.createElement("canvas"), e = r.getContext("2d");
-    return e ? (r.width = 200, r.height = 50, e.textBaseline = "top", e.font = "14px Arial", e.fillStyle = "#f60", e.fillRect(125, 1, 62, 20), e.fillStyle = "#069", e.fillText("Canvas Fingerprint 🎨", 2, 15), e.fillStyle = "rgba(102, 204, 0, 0.7)", e.fillText("Canvas Fingerprint 🎨", 4, 17), r.toDataURL()) : "";
+    const i = document.createElement("canvas"), o = i.getContext("2d");
+    return o ? (i.width = 200, i.height = 50, o.textBaseline = "top", o.font = "14px Arial", o.fillStyle = "#f60", o.fillRect(125, 1, 62, 20), o.fillStyle = "#069", o.fillText("Canvas Fingerprint 🎨", 2, 15), o.fillStyle = "rgba(102, 204, 0, 0.7)", o.fillText("Canvas Fingerprint 🎨", 4, 17), i.toDataURL()) : "";
   } catch {
     return "";
   }
 }
-function I() {
+function _() {
   try {
     if (typeof document > "u") return "";
-    const r = ["monospace", "sans-serif", "serif"], e = [
+    const i = ["monospace", "sans-serif", "serif"], o = [
       "Arial",
       "Verdana",
       "Times New Roman",
@@ -22036,36 +22056,36 @@ function I() {
       "SimHei",
       "KaiTi",
       "FangSong"
-    ], n = document.createElement("canvas"), d = n.getContext("2d");
-    if (!d) return "";
+    ], n = document.createElement("canvas"), a = n.getContext("2d");
+    if (!a) return "";
     n.width = 200, n.height = 50;
-    const u = "mmmmmmmmmmlli", c = "72px", g = {};
-    r.forEach((l) => {
-      d.font = `${c} ${l}`, g[l] = d.measureText(u).width;
+    const l = "mmmmmmmmmmlli", c = "72px", g = {};
+    i.forEach((m) => {
+      a.font = `${c} ${m}`, g[m] = a.measureText(l).width;
     });
     const y = [];
-    return e.forEach((l) => {
+    return o.forEach((m) => {
       let h = !1;
-      r.forEach((m) => {
-        d.font = `${c} ${l}, ${m}`, d.measureText(u).width !== g[m] && (h = !0);
-      }), h && y.push(l);
+      i.forEach((u) => {
+        a.font = `${c} ${m}, ${u}`, a.measureText(l).width !== g[u] && (h = !0);
+      }), h && y.push(m);
     }), y.sort().join(",");
   } catch {
     return "";
   }
 }
-async function H() {
+async function F() {
   try {
     if (typeof AudioContext > "u" && typeof window.webkitAudioContext > "u")
       return "";
-    const r = AudioContext || window.webkitAudioContext, e = new r(), n = e.createOscillator(), d = e.createAnalyser(), u = e.createGain(), c = e.createScriptProcessor(4096, 1, 1);
-    return u.gain.value = 0, n.type = "triangle", n.connect(d), d.connect(c), c.connect(u), u.connect(e.destination), n.start(0), new Promise((g) => {
+    const i = AudioContext || window.webkitAudioContext, o = new i(), n = o.createOscillator(), a = o.createAnalyser(), l = o.createGain(), c = o.createScriptProcessor(4096, 1, 1);
+    return l.gain.value = 0, n.type = "triangle", n.connect(a), a.connect(c), c.connect(l), l.connect(o.destination), n.start(0), new Promise((g) => {
       c.onaudioprocess = (y) => {
-        const l = y.inputBuffer.getChannelData(0), h = Array.from(l.slice(0, 100)).map((m) => Math.abs(m).toString(36).substring(2, 5)).join("");
-        n.stop(), e.close(), g(h);
+        const m = y.inputBuffer.getChannelData(0), h = Array.from(m.slice(0, 100)).map((u) => Math.abs(u).toString(36).substring(2, 5)).join("");
+        n.stop(), o.close(), g(h);
       }, setTimeout(() => {
         try {
-          n.stop(), e.close();
+          n.stop(), o.close();
         } catch {
         }
         g("");
@@ -22075,7 +22095,7 @@ async function H() {
     return "";
   }
 }
-async function _() {
+async function B() {
   try {
     if (typeof navigator > "u" || !navigator.mediaDevices || !navigator.mediaDevices.enumerateDevices)
       return "";
@@ -22088,232 +22108,234 @@ async function _() {
     return "";
   }
 }
-function L() {
+function Z() {
   try {
-    const r = document.createElement("canvas"), e = r.getContext("webgl") || r.getContext("experimental-webgl");
-    if (!e) return "";
-    const n = e.getExtension("WEBGL_debug_renderer_info"), d = n ? e.getParameter(n.UNMASKED_VENDOR_WEBGL) : "", u = n ? e.getParameter(n.UNMASKED_RENDERER_WEBGL) : "";
+    const i = document.createElement("canvas"), o = i.getContext("webgl") || i.getContext("experimental-webgl");
+    if (!o) return "";
+    const n = o.getExtension("WEBGL_debug_renderer_info"), a = n ? o.getParameter(n.UNMASKED_VENDOR_WEBGL) : "", l = n ? o.getParameter(n.UNMASKED_RENDERER_WEBGL) : "";
     return [
-      d,
-      u,
-      e.getParameter(e.VERSION),
-      e.getParameter(e.SHADING_LANGUAGE_VERSION),
-      e.getParameter(e.MAX_TEXTURE_SIZE),
-      e.getParameter(e.MAX_VERTEX_ATTRIBS)
+      a,
+      l,
+      o.getParameter(o.VERSION),
+      o.getParameter(o.SHADING_LANGUAGE_VERSION),
+      o.getParameter(o.MAX_TEXTURE_SIZE),
+      o.getParameter(o.MAX_VERTEX_ATTRIBS)
     ].join("|");
   } catch {
     return "";
   }
 }
-async function Ho(r) {
-  const e = [
-    r.device.brand || "unknown",
-    r.device.model || "unknown",
-    r.device.os || "unknown",
-    r.device.browser?.name || "unknown",
-    r.device.browser?.version || "unknown",
-    r.device.browser?.engine || "unknown",
-    r.device.browser?.engineVersion || "unknown",
-    r.device.deviceType,
-    `${r.screen.width}x${r.screen.height}`,
-    r.screen.colorDepth?.toString() || "",
-    r.screen.pixelRatio?.toString() || "",
-    r.timezone || "",
-    r.platform || "",
-    (r.plugins || []).join(","),
-    r.canvas || "",
-    r.webgl || "",
-    r.fonts || "",
-    r.audio || "",
-    r.mediaDevices || "",
-    r.hardwareConcurrency?.toString() || "",
-    r.deviceMemory?.toString() || ""
+async function Bo(i) {
+  const o = [
+    i.device.brand || "unknown",
+    i.device.model || "unknown",
+    i.device.os || "unknown",
+    i.device.browser?.name || "unknown",
+    i.device.browser?.version || "unknown",
+    i.device.browser?.engine || "unknown",
+    i.device.browser?.engineVersion || "unknown",
+    i.device.deviceType,
+    `${i.screen.width}x${i.screen.height}`,
+    i.screen.colorDepth?.toString() || "",
+    i.screen.pixelRatio?.toString() || "",
+    i.timezone || "",
+    i.platform || "",
+    (i.plugins || []).join(","),
+    i.canvas || "",
+    i.webgl || "",
+    i.fonts || "",
+    i.audio || "",
+    i.mediaDevices || "",
+    i.hardwareConcurrency?.toString() || "",
+    i.deviceMemory?.toString() || ""
   ];
-  r.extra && Object.keys(r.extra).sort().forEach((d) => {
-    e.push(`${d}:${JSON.stringify(r.extra[d])}`);
+  i.extra && Object.keys(i.extra).sort().forEach((a) => {
+    o.push(`${a}:${JSON.stringify(i.extra[a])}`);
   });
-  const n = e.join("|");
+  const n = o.join("|");
   if (typeof crypto < "u" && crypto.subtle)
     try {
-      const u = new TextEncoder().encode(n), c = await crypto.subtle.digest("SHA-256", u);
+      const l = new TextEncoder().encode(n), c = await crypto.subtle.digest("SHA-256", l);
       return Array.from(new Uint8Array(c)).map((y) => y.toString(16).padStart(2, "0")).join("");
     } catch {
     }
-  return _o(n);
+  return Zo(n);
 }
-function _o(r) {
-  let e = 0;
-  for (let n = 0; n < r.length; n++) {
-    const d = r.charCodeAt(n);
-    e = (e << 5) - e + d, e = e & e;
+function Zo(i) {
+  let o = 0;
+  for (let n = 0; n < i.length; n++) {
+    const a = i.charCodeAt(n);
+    o = (o << 5) - o + a, o = o & o;
   }
-  return Math.abs(e).toString(16).padStart(16, "0");
+  return Math.abs(o).toString(16).padStart(16, "0");
 }
-function Lo(r = []) {
-  const e = [...r];
+function Do(i = []) {
+  const o = i.map(f);
   function n(y) {
-    e.push(y);
+    o.push(f(y));
   }
-  function d(y) {
-    e.push(...y);
+  function a(y) {
+    o.push(...y.map(f));
   }
-  function u() {
-    e.length = 0;
+  function l() {
+    o.length = 0;
   }
-  function c(y, l, h, m) {
-    const v = Ro(y), C = [], t = Uo(y), b = Io(y), V = R(y), x = m?.pixelRatio || (typeof window < "u" ? window.devicePixelRatio : void 0);
-    for (const o of e) {
-      let i = 0, a = !1, s = !1, p = !0, G = !0, A = !1;
-      if (o.uaContains && o.uaContains.length > 0)
-        if (o.uaContains.some((M) => v.includes(M.toLowerCase())))
-          i += 40, a = !0;
+  function c(y, m, h, u) {
+    const X = Lo(y), C = [], t = _o(y), b = Fo(y), A = H(y), x = u?.pixelRatio || (typeof window < "u" ? window.devicePixelRatio : void 0);
+    for (const e of o) {
+      let r = 0, d = !1, s = !1, p = !0, M = !0, V = !1;
+      const v = e.uaContainsLower;
+      if (v && v.length > 0)
+        if (v.some((T) => X.includes(T)))
+          r += 40, d = !0;
         else
           continue;
-      if (!a && o.uaRegex && o.uaRegex.length > 0 && o.uaRegex.some((M) => {
-        try {
-          return new RegExp(M, "i").test(y);
-        } catch {
-          return !1;
-        }
-      }) && (i += 40, a = !0), a) {
-        if (o.resolutions?.length)
-          if (s = E(l, h, o), s)
-            i += 20;
+      const O = e.uaRegexObjects;
+      if (!d && O && O.length > 0 && O.some((T) => T.test(y)) && (r += 40, d = !0), d) {
+        if (e.resolutions?.length)
+          if (s = I(m, h, e), s)
+            r += 20;
           else {
-            const M = o.type === "laptop" || o.type === "desktop", O = o.type === "tablet";
-            if (M || O) {
-              const Q = M ? 50 : 20;
-              o.resolutions.some((N) => {
-                const F = Math.abs(N.w - l), B = Math.abs(N.h - h);
-                return F <= Q && B <= Q;
-              }) ? (s = !0, i += 15) : i -= 10;
+            const E = e.type === "laptop" || e.type === "desktop", D = e.type === "tablet";
+            if (E || D) {
+              const R = E ? 50 : 20;
+              e.resolutions.some((U) => {
+                const z = Math.abs(U.w - m), K = Math.abs(U.h - h);
+                return z <= R && K <= R;
+              }) ? (s = !0, r += 15) : r -= 10;
             } else
-              i -= 10;
+              r -= 10;
           }
-        p = T(x, o), p ? o.dpr !== void 0 && (i += 10) : i -= 5, G = f(b, o), G ? o.os && (i += 10) : i -= 10, o.type && (A = o.type === t || o.type === "phone" && t === "mobile" || o.type === "mobile" && t === "phone" || o.type === "laptop" && t === "desktop" || // laptop和desktop互相兼容
-        o.type === "desktop" && t === "laptop", A ? i += 10 : i -= 5), (o.model?.toLowerCase().includes("mac") && (t === "desktop" || t === "laptop") || o.model?.toLowerCase().includes("macbook") && (t === "desktop" || t === "laptop") || o.model?.toLowerCase().includes("iphone") && (t === "mobile" || t === "phone") || o.model?.toLowerCase().includes("ipad") && t === "tablet" || o.model?.toLowerCase().includes("laptop") && (t === "desktop" || t === "laptop")) && (i += 5), o.priority && (i += Math.min(o.priority / 100, 20)), C.push({
-          rule: o,
-          score: i,
-          uaMatch: a,
+        p = k(x, e), p ? e.dpr !== void 0 && (r += 10) : r -= 5, M = Q(b, e), M ? e.os && (r += 10) : r -= 10, e.type && (V = e.type === t || e.type === "phone" && t === "mobile" || e.type === "mobile" && t === "phone" || e.type === "laptop" && t === "desktop" || // laptop和desktop互相兼容
+        e.type === "desktop" && t === "laptop", V ? r += 10 : r -= 5);
+        const G = e.modelLower;
+        !!G && (G.includes("mac") && (t === "desktop" || t === "laptop") || G.includes("macbook") && (t === "desktop" || t === "laptop") || G.includes("iphone") && (t === "mobile" || t === "phone") || G.includes("ipad") && t === "tablet" || G.includes("laptop") && (t === "desktop" || t === "laptop")) && (r += 5), e.priority && (r += Math.min(e.priority / 100, 20)), C.push({
+          rule: e,
+          score: r,
+          uaMatch: d,
           resolutionMatch: s,
           dprMatch: p,
-          osMatch: G,
-          deviceTypeMatch: A
+          osMatch: M,
+          deviceTypeMatch: V
         });
       }
     }
     if (C.length === 0)
-      for (const o of e) {
-        let i = 0, a = !1, s = !0, p = !0, G = !1;
-        if (o.resolutions?.length) {
-          if (a = E(l, h, o), !a) continue;
-          i += 30;
+      for (const e of o) {
+        let r = 0, d = !1, s = !0, p = !0, M = !1;
+        if (e.resolutions?.length) {
+          if (d = I(m, h, e), !d) continue;
+          r += 30;
         } else
           continue;
-        if (s = T(x, o), o.dpr !== void 0 && (s ? i += 25 : i -= 15), p = f(b, o), o.os)
+        if (s = k(x, e), e.dpr !== void 0 && (s ? r += 25 : r -= 15), p = Q(b, e), e.os)
           if (p)
-            i += 20;
+            r += 20;
           else
             continue;
-        else b && (i += 5);
-        if (o.type)
-          if (G = o.type === t || o.type === "phone" && t === "mobile" || o.type === "mobile" && t === "phone" || o.type === "laptop" && t === "desktop" || // laptop和desktop互相兼容
-          o.type === "desktop" && t === "laptop", G)
-            i += 15;
+        else b && (r += 5);
+        if (e.type)
+          if (M = e.type === t || e.type === "phone" && t === "mobile" || e.type === "mobile" && t === "phone" || e.type === "laptop" && t === "desktop" || // laptop和desktop互相兼容
+          e.type === "desktop" && t === "laptop", M)
+            r += 15;
           else
             continue;
-        b && (b.includes("iOS") && o.brand.toLowerCase() === "apple" ? i += 10 : b.includes("Android") && o.brand.toLowerCase() !== "apple" && (i += 5)), o.priority && (i += Math.min(o.priority / 100, 15)), C.push({
-          rule: o,
-          score: i,
+        if (b) {
+          const V = e.brandLower;
+          b.includes("iOS") && V === "apple" ? r += 10 : b.includes("Android") && V !== "apple" && (r += 5);
+        }
+        e.priority && (r += Math.min(e.priority / 100, 15)), C.push({
+          rule: e,
+          score: r,
           uaMatch: !1,
-          resolutionMatch: a,
+          resolutionMatch: d,
           dprMatch: s,
           osMatch: p,
-          deviceTypeMatch: G
+          deviceTypeMatch: M
         });
       }
     if (C.length === 0 && b)
-      for (const o of e) {
-        let i = 0;
-        const a = f(b, o);
-        if (!a || !o.os) continue;
-        if (o.resolutions?.length) {
-          if (!o.resolutions.some((G) => {
-            const A = Math.abs(G.w - l), X = Math.abs(G.h - h), O = o.type === "laptop" || o.type === "desktop" ? 50 : 10;
-            return A <= O && X <= O;
+      for (const e of o) {
+        let r = 0;
+        const d = Q(b, e);
+        if (!d || !e.os) continue;
+        if (e.resolutions?.length) {
+          if (!e.resolutions.some((M) => {
+            const V = Math.abs(M.w - m), v = Math.abs(M.h - h), G = e.type === "laptop" || e.type === "desktop" ? 50 : 10;
+            return V <= G && v <= G;
           })) continue;
-          i += 20;
+          r += 20;
         }
-        if (o.type)
-          if (o.type === t || o.type === "phone" && t === "mobile" || o.type === "mobile" && t === "phone" || o.type === "laptop" && t === "desktop" || // laptop和desktop互相兼容
-          o.type === "desktop" && t === "laptop")
-            i += 10;
+        if (e.type)
+          if (e.type === t || e.type === "phone" && t === "mobile" || e.type === "mobile" && t === "phone" || e.type === "laptop" && t === "desktop" || // laptop和desktop互相兼容
+          e.type === "desktop" && t === "laptop")
+            r += 10;
           else
             continue;
-        const s = T(x, o);
-        o.dpr !== void 0 && s && (i += 15), i += 5, C.push({
-          rule: o,
-          score: i,
+        const s = k(x, e);
+        e.dpr !== void 0 && s && (r += 15), r += 5, C.push({
+          rule: e,
+          score: r,
           uaMatch: !1,
           resolutionMatch: !0,
           dprMatch: s,
-          osMatch: a,
+          osMatch: d,
           deviceTypeMatch: !0
         });
       }
-    if (C.sort((o, i) => i.score - o.score), C.length > 0) {
-      const o = C[0], i = C.filter((p) => p.score >= o.score * 0.7).map((p) => p.rule.id || `${p.rule.brand}:${p.rule.model}`);
-      let a = o.uaMatch ? 0.85 : 0.65, s = 0;
-      if (o.resolutionMatch && s++, o.dprMatch && o.rule.dpr !== void 0 && s++, o.osMatch && o.rule.os && s++, o.deviceTypeMatch && o.rule.type && s++, a += s * 0.05, a = Math.min(0.98, a + Math.min(o.score / 300, 0.1)), C.length > 1) {
-        const p = o.score - C[1].score;
-        p > 20 ? a = Math.min(0.98, a + 0.05) : p < 5 && C.length > 1 && (a = Math.max(0.5, a - 0.1));
+    if (C.sort((e, r) => r.score - e.score), C.length > 0) {
+      const e = C[0], r = C.filter((p) => p.score >= e.score * 0.7).map((p) => p.rule.id || `${p.rule.brand}:${p.rule.model}`);
+      let d = e.uaMatch ? 0.85 : 0.65, s = 0;
+      if (e.resolutionMatch && s++, e.dprMatch && e.rule.dpr !== void 0 && s++, e.osMatch && e.rule.os && s++, e.deviceTypeMatch && e.rule.type && s++, d += s * 0.05, d = Math.min(0.98, d + Math.min(e.score / 300, 0.1)), C.length > 1) {
+        const p = e.score - C[1].score;
+        p > 20 ? d = Math.min(0.98, d + 0.05) : p < 5 && C.length > 1 && (d = Math.max(0.5, d - 0.1));
       }
       return {
-        brand: o.rule.brand,
-        model: o.rule.model,
-        confidence: Math.min(0.98, Math.max(0.5, a)),
-        matchedRuleIds: i,
+        brand: e.rule.brand,
+        model: e.rule.model,
+        confidence: Math.min(0.98, Math.max(0.5, d)),
+        matchedRuleIds: r,
         os: b,
         deviceType: t,
-        browser: V,
+        browser: A,
         rawUA: y
       };
     }
     let S = "unknown", P = "unknown", w = 0.3;
     if (b) {
       if (b.includes("Windows"))
-        if (S = "Windows", l > 0 && h > 0) {
-          const o = e.filter(
-            (i) => i.os?.name === "windows" && (i.type === "laptop" || i.type === "desktop") && i.resolutions?.some((a) => {
-              const s = Math.abs(a.w - l), p = Math.abs(a.h - h);
+        if (S = "Windows", m > 0 && h > 0) {
+          const e = o.filter(
+            (r) => r.os?.name === "windows" && (r.type === "laptop" || r.type === "desktop") && r.resolutions?.some((d) => {
+              const s = Math.abs(d.w - m), p = Math.abs(d.h - h);
               return s <= 50 && p <= 50;
             })
           );
-          if (o.length > 0) {
-            const i = o.sort((a, s) => (s.priority || 0) - (a.priority || 0))[0];
-            S = i.brand, P = i.model, w = 0.65;
+          if (e.length > 0) {
+            const r = e.sort((d, s) => (s.priority || 0) - (d.priority || 0))[0];
+            S = r.brand, P = r.model, w = 0.65;
           } else
             P = "Windows PC", w = 0.4;
         } else
           P = "Windows PC", w = 0.4;
       else if (b.includes("macOS"))
-        if (S = "Apple", l > 0 && h > 0) {
-          const o = e.filter(
-            (i) => (i.os?.name === "macos" || i.os?.name === "mac os") && (i.type === "laptop" || i.type === "desktop") && i.resolutions?.some((a) => {
-              const s = Math.abs(a.w - l), p = Math.abs(a.h - h);
+        if (S = "Apple", m > 0 && h > 0) {
+          const e = o.filter(
+            (r) => (r.os?.name === "macos" || r.os?.name === "mac os") && (r.type === "laptop" || r.type === "desktop") && r.resolutions?.some((d) => {
+              const s = Math.abs(d.w - m), p = Math.abs(d.h - h);
               return s <= 50 && p <= 50;
             })
           );
-          if (o.length > 0) {
-            let i = o[0];
+          if (e.length > 0) {
+            let r = e[0];
             if (x) {
-              const a = o.filter(
+              const d = e.filter(
                 (s) => s.dpr && Math.abs(s.dpr - x) < 0.2
               );
-              a.length > 0 ? i = a.sort((s, p) => (p.priority || 0) - (s.priority || 0))[0] : i = o.sort((s, p) => (p.priority || 0) - (s.priority || 0))[0];
+              d.length > 0 ? r = d.sort((s, p) => (p.priority || 0) - (s.priority || 0))[0] : r = e.sort((s, p) => (p.priority || 0) - (s.priority || 0))[0];
             } else
-              i = o.sort((a, s) => (s.priority || 0) - (a.priority || 0))[0];
-            S = i.brand, P = i.model, w = x && i.dpr ? 0.75 : 0.65;
+              r = e.sort((d, s) => (s.priority || 0) - (d.priority || 0))[0];
+            S = r.brand, P = r.model, w = x && r.dpr ? 0.75 : 0.65;
           } else
             P = "Mac", w = 0.4;
         } else
@@ -22321,29 +22343,29 @@ function Lo(r = []) {
       else if (b.includes("Linux"))
         S = "Linux", P = "PC", w = 0.35;
       else if (b.includes("Android")) {
-        if (S = "Android", P = "Device", l > 0 && h > 0) {
-          const o = e.filter(
-            (i) => i.os?.name === "android" && i.resolutions?.some((a) => {
-              const s = Math.abs(a.w - l), p = Math.abs(a.h - h);
+        if (S = "Android", P = "Device", m > 0 && h > 0) {
+          const e = o.filter(
+            (r) => r.os?.name === "android" && r.resolutions?.some((d) => {
+              const s = Math.abs(d.w - m), p = Math.abs(d.h - h);
               return s <= 20 && p <= 20;
             })
           );
-          if (o.length > 0) {
-            const i = o.sort((a, s) => (s.priority || 0) - (a.priority || 0))[0];
-            S = i.brand, P = i.model, w = 0.6;
+          if (e.length > 0) {
+            const r = e.sort((d, s) => (s.priority || 0) - (d.priority || 0))[0];
+            S = r.brand, P = r.model, w = 0.6;
           }
         }
       } else if (b.includes("iOS"))
-        if (S = "Apple", l > 0 && h > 0 && x) {
-          const o = e.filter(
-            (i) => (i.os?.name === "ios" || i.os?.name === "ipados") && i.resolutions?.some((a) => {
-              const s = Math.abs(a.w - l), p = Math.abs(a.h - h);
+        if (S = "Apple", m > 0 && h > 0 && x) {
+          const e = o.filter(
+            (r) => (r.os?.name === "ios" || r.os?.name === "ipados") && r.resolutions?.some((d) => {
+              const s = Math.abs(d.w - m), p = Math.abs(d.h - h);
               return s <= 10 && p <= 10;
-            }) && (!i.dpr || Math.abs(i.dpr - x) < 0.2)
+            }) && (!r.dpr || Math.abs(r.dpr - x) < 0.2)
           );
-          if (o.length > 0) {
-            const i = o.sort((a, s) => (s.priority || 0) - (a.priority || 0))[0];
-            S = i.brand, P = i.model, w = 0.75;
+          if (e.length > 0) {
+            const r = e.sort((d, s) => (s.priority || 0) - (d.priority || 0))[0];
+            S = r.brand, P = r.model, w = 0.75;
           } else
             P = t === "tablet" ? "iPad" : "iPhone", w = 0.5;
         } else
@@ -22356,67 +22378,67 @@ function Lo(r = []) {
       matchedRuleIds: [],
       os: b,
       deviceType: t,
-      browser: V,
+      browser: A,
       rawUA: y
     };
   }
-  async function g(y, l, h, m) {
-    const v = {
-      ...m?.extra,
-      pixelRatio: m?.pixelRatio || (typeof window < "u" ? window.devicePixelRatio : void 0)
-    }, C = c(y, l, h, v);
-    let t = m?.canvas, b = m?.webgl, V = m?.fonts, x = m?.audio, S = m?.mediaDevices;
-    m?.autoCollect !== !1 && typeof document < "u" && (t || (t = U()), b || (b = L()), V || (V = I()), x || (x = await H()), S || (S = await _()));
-    const P = m?.hardwareConcurrency || (typeof navigator < "u" ? navigator.hardwareConcurrency : void 0), w = m?.deviceMemory || (typeof navigator < "u" && navigator.deviceMemory ? navigator.deviceMemory : void 0), o = {
+  async function g(y, m, h, u) {
+    const X = {
+      ...u?.extra,
+      pixelRatio: u?.pixelRatio || (typeof window < "u" ? window.devicePixelRatio : void 0)
+    }, C = c(y, m, h, X);
+    let t = u?.canvas, b = u?.webgl, A = u?.fonts, x = u?.audio, S = u?.mediaDevices;
+    u?.autoCollect !== !1 && typeof document < "u" && (t || (t = L()), b || (b = Z()), A || (A = _()), x || (x = await F()), S || (S = await B()));
+    const P = u?.hardwareConcurrency || (typeof navigator < "u" ? navigator.hardwareConcurrency : void 0), w = u?.deviceMemory || (typeof navigator < "u" && navigator.deviceMemory ? navigator.deviceMemory : void 0), e = {
       device: C,
       screen: {
-        width: l,
+        width: m,
         height: h,
-        colorDepth: m?.colorDepth || (typeof screen < "u" ? screen.colorDepth : void 0),
-        pixelRatio: m?.pixelRatio || (typeof window < "u" ? window.devicePixelRatio : void 0)
+        colorDepth: u?.colorDepth || (typeof screen < "u" ? screen.colorDepth : void 0),
+        pixelRatio: u?.pixelRatio || (typeof window < "u" ? window.devicePixelRatio : void 0)
       },
-      timezone: m?.timezone || (typeof Intl < "u" ? Intl.DateTimeFormat().resolvedOptions().timeZone : void 0),
-      platform: m?.platform || (typeof navigator < "u" ? navigator.platform : void 0),
-      plugins: m?.plugins || (typeof navigator < "u" && navigator.plugins ? Array.from(navigator.plugins).map((i) => i.name).sort() : void 0),
+      timezone: u?.timezone || (typeof Intl < "u" ? Intl.DateTimeFormat().resolvedOptions().timeZone : void 0),
+      platform: u?.platform || (typeof navigator < "u" ? navigator.platform : void 0),
+      plugins: u?.plugins || (typeof navigator < "u" && navigator.plugins ? Array.from(navigator.plugins).map((r) => r.name).sort() : void 0),
       canvas: t,
       webgl: b,
-      fonts: V,
+      fonts: A,
       audio: x,
       mediaDevices: S,
       hardwareConcurrency: P,
       deviceMemory: w,
-      extra: m?.extra
+      extra: u?.extra
     };
-    return Ho(o);
+    return Bo(e);
   }
   return {
     detectDevice: c,
     addRule: n,
-    loadModelDB: d,
-    clearDB: u,
+    loadModelDB: a,
+    clearDB: l,
     generateDeviceFingerprint: g,
-    detectBrowser: R,
-    getCanvasFingerprint: U,
-    getWebGLFingerprint: L,
-    getFontFingerprint: I,
-    getAudioFingerprint: H,
-    getMediaDevicesFingerprint: _,
-    _db: e
+    detectBrowser: H,
+    getCanvasFingerprint: L,
+    getWebGLFingerprint: Z,
+    getFontFingerprint: _,
+    getAudioFingerprint: F,
+    getMediaDevicesFingerprint: B,
+    _db: o
   };
 }
-const Fo = Lo([]);
-async function Bo() {
+const zo = Do([]);
+async function Ko() {
   try {
-    await k.initialize();
-    const r = k.getAllDevices();
-    Fo.loadModelDB(r);
-  } catch (r) {
-    console.error("Failed to initialize device detector:", r);
+    await N.initialize();
+    const i = N.getAllDevices();
+    zo.loadModelDB(i);
+  } catch (i) {
+    console.error("Failed to initialize device detector:", i);
   }
 }
-Bo().catch(console.error);
+Ko().catch(console.error);
 export {
-  Lo as createDetector,
-  Fo as detector,
-  k as deviceLoader
+  Do as createDetector,
+  zo as detector,
+  N as deviceLoader
 };

@@ -284,7 +284,7 @@ const mediaDevicesFingerprint = await detector.getMediaDevicesFingerprint();
 **返回：** 检测器实例
 
 ```javascript
-import { createDetector } from 'sass-getid';
+import { createDetector } from 'get-fingerprint-id';
 
 // 创建自定义检测器
 const customDetector = createDetector([
@@ -321,7 +321,7 @@ customDetector.clearDB();
 ### 自定义设备规则
 
 ```javascript
-import { createDetector, ModelRule } from 'sass-getid';
+import { createDetector, ModelRule } from 'get-fingerprint-id';
 
 const customRules: ModelRule[] = [
   {
@@ -373,7 +373,7 @@ const fingerprints = await Promise.all(
 ### 监听设备数据库加载
 
 ```javascript
-import { deviceLoader } from 'sass-getid';
+import { deviceLoader } from 'get-fingerprint-id';
 
 // 等待设备数据库加载完成
 await deviceLoader.initialize();
