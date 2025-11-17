@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Thumbmark.js Browser Test</title>
+</head>
+<style>
+.fs-20 { font-size: 30px; }
+</style>
+<body>
+<h1>Thumbmark.js Device Detection Test</h1>
+<pre id="output" class="fs-20"></pre>
+
+<script type="module">
+import { detector } from './src/index.ts';
+
+const ua = navigator.userAgent;
+const width = window.screen.width;
+const height = window.screen.height;
+
+async function showDeviceInfo() {
+  
+
+  // 再检测设备
+  const result = detector.detectDevice(ua, width, height);
+  // 先生成 getId
+  const getId = await detector.generateDeviceFingerprint(ua, width, height);
+  // 输出到页面
+  const output = document.getElementById('output');
+  output.textContent = `
+      User Agent: ${ua}
+      Screen: ${width} x ${height}
+      Detected Device:
+      Brand: ${result.brand || 'unknown'}
+      Model: ${result.model || 'unknown'}
+      Device Type: ${result.deviceType}
+      OS: ${result.os || 'unknown'}
+      Confidence: ${(result.confidence*100).toFixed(1)}%
+      Matched Rules: ${result.matchedRuleIds.join(', ')}
+      Raw UA: ${result.rawUA}
+      Browser: ${result.browser?.name || 'unknown'} ${result.browser?.version || 'unknown'}
+      Engine: ${result.browser?.engine || 'unknown'} ${result.browser?.engineVersion || 'unknown'}  
+      CPU: ${result.cpu?.brand || 'unknown'} ${result.cpu?.model || 'unknown'}
+      DPR: ${result.dpr || 'unknown'}
+      Series: ${result.series || 'unknown'}
+      Year: ${result.year || 'unknown'}
+      Notes: ${result.notes || 'unknown'}
+      Priority: ${result.priority || 'unknown'}
+      Resolutions: ${result.resolutions?.map(r => `${r.w}x${r.h}`).join(', ') || 'unknown'}
+      UA Contains: ${result.uaContains?.join(', ') || 'unknown'}
+      UA Regex: ${result.uaRegex?.join(', ') || 'unknown'}    
+      OS: ${result.os?.name || 'unknown'} ${result.os?.minVersion || 'unknown'}
+      Canvas: ${result.canvas || 'unknown'}
+      WebGL: ${result.webgl || 'unknown'}
+      Extra: ${result.extra || 'unknown'},
+      getId: ${getId}
+  `;
+}
+
+// 调用
+showDeviceInfo();
+</script>
+
+</body>
+</html>
