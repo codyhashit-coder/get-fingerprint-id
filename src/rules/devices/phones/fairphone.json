@@ -1,0 +1,45 @@
+[
+  {
+    "id": "fairphone-5",
+    "brand": "Fairphone",
+    "model": "Fairphone 5",
+    "series": "Fairphone",
+    "year": 2023,
+    "uaContains": ["Fairphone 5"],
+    "resolutions": [{"w": 1224, "h": 2700, "ratio": "20:9"}],
+    "dpr": 2.55,
+    "priority": 9600,
+    "type": "phone",
+    "os": {"name": "android", "minVersion": "13"},
+    "cpu": {"brand": "Qualcomm", "model": "QCM6490"}
+  },
+  {
+    "id": "fairphone-4",
+    "brand": "Fairphone",
+    "model": "Fairphone 4",
+    "series": "Fairphone",
+    "year": 2021,
+    "uaContains": ["Fairphone 4"],
+    "resolutions": [{"w": 1080, "h": 2340, "ratio": "19.5:9"}],
+    "dpr": 2.5,
+    "priority": 9300,
+    "type": "phone",
+    "os": {"name": "android", "minVersion": "11"},
+    "cpu": {"brand": "Qualcomm", "model": "Snapdragon 750G"}
+  },
+  {
+    "id": "fairphone-3-plus",
+    "brand": "Fairphone",
+    "model": "Fairphone 3+",
+    "series": "Fairphone",
+    "year": 2020,
+    "uaContains": ["Fairphone 3", "Fairphone 3+"],
+    "resolutions": [{"w": 1080, "h": 2160, "ratio": "18:9"}],
+    "dpr": 2.5,
+    "priority": 9000,
+    "type": "phone",
+    "os": {"name": "android", "minVersion": "10"},
+    "cpu": {"brand": "Qualcomm", "model": "Snapdragon 632"}
+  }
+]
+

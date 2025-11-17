@@ -35,6 +35,7 @@ const BRAND_HINTS: Record<string, string[]> = {
   blackshark: ['blackshark'],
   nothing: ['nothing'],
   realme: ['realme'],
+  fairphone: ['fairphone'],
   tecno: ['tecno'],
   infinix: ['infinix'],
   itel: ['itel'],

@@ -1,0 +1,87 @@
+[
+  {
+    "id": "galaxy-tab-s10-ultra",
+    "brand": "Samsung",
+    "model": "Galaxy Tab S10 Ultra",
+    "series": "Galaxy Tab S",
+    "year": 2025,
+    "uaContains": ["SM-X910", "Galaxy Tab S10 Ultra"],
+    "resolutions": [{"w": 1848, "h": 2960, "ratio": "5:8"}],
+    "dpr": 2.4,
+    "priority": 9400,
+    "type": "tablet",
+    "os": {"name": "android", "minVersion": "15"},
+    "cpu": {"brand": "Qualcomm", "model": "Snapdragon 8 Elite"}
+  },
+  {
+    "id": "galaxy-tab-s10-plus",
+    "brand": "Samsung",
+    "model": "Galaxy Tab S10+",
+    "series": "Galaxy Tab S",
+    "year": 2025,
+    "uaContains": ["SM-X810", "Galaxy Tab S10+"],
+    "resolutions": [{"w": 1752, "h": 2800, "ratio": "5:8"}],
+    "dpr": 2.3,
+    "priority": 9300,
+    "type": "tablet",
+    "os": {"name": "android", "minVersion": "15"},
+    "cpu": {"brand": "Qualcomm", "model": "Snapdragon 8 Elite"}
+  },
+  {
+    "id": "galaxy-tab-s10-fe",
+    "brand": "Samsung",
+    "model": "Galaxy Tab S10 FE",
+    "series": "Galaxy Tab S",
+    "year": 2025,
+    "uaContains": ["SM-X610", "Galaxy Tab S10 FE"],
+    "resolutions": [{"w": 1440, "h": 2304, "ratio": "3:5"}],
+    "dpr": 2.1,
+    "priority": 9100,
+    "type": "tablet",
+    "os": {"name": "android", "minVersion": "15"},
+    "cpu": {"brand": "Qualcomm", "model": "Snapdragon 7+ Gen 3"}
+  },
+  {
+    "id": "galaxy-tab-s9-ultra",
+    "brand": "Samsung",
+    "model": "Galaxy Tab S9 Ultra",
+    "series": "Galaxy Tab S",
+    "year": 2023,
+    "uaContains": ["SM-X910", "Galaxy Tab S9 Ultra"],
+    "resolutions": [{"w": 1848, "h": 2960, "ratio": "5:8"}],
+    "dpr": 2.2,
+    "priority": 9000,
+    "type": "tablet",
+    "os": {"name": "android", "minVersion": "14"},
+    "cpu": {"brand": "Qualcomm", "model": "Snapdragon 8 Gen 2"}
+  },
+  {
+    "id": "galaxy-tab-s9-plus",
+    "brand": "Samsung",
+    "model": "Galaxy Tab S9+",
+    "series": "Galaxy Tab S",
+    "year": 2023,
+    "uaContains": ["SM-X810", "Galaxy Tab S9+"],
+    "resolutions": [{"w": 1752, "h": 2800, "ratio": "5:8"}],
+    "dpr": 2.2,
+    "priority": 8900,
+    "type": "tablet",
+    "os": {"name": "android", "minVersion": "14"},
+    "cpu": {"brand": "Qualcomm", "model": "Snapdragon 8 Gen 2"}
+  },
+  {
+    "id": "galaxy-tab-s9-fe",
+    "brand": "Samsung",
+    "model": "Galaxy Tab S9 FE",
+    "series": "Galaxy Tab S",
+    "year": 2023,
+    "uaContains": ["SM-X510", "Galaxy Tab S9 FE"],
+    "resolutions": [{"w": 1600, "h": 2560, "ratio": "2:3"}],
+    "dpr": 2,
+    "priority": 8700,
+    "type": "tablet",
+    "os": {"name": "android", "minVersion": "14"},
+    "cpu": {"brand": "Samsung", "model": "Exynos 1380"}
+  }
+]
+

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "thinkpad-x1-carbon-gen12",
+    "brand": "Lenovo",
+    "model": "ThinkPad X1 Carbon Gen 12",
+    "series": "ThinkPad X1",
+    "year": 2024,
+    "uaContains": ["ThinkPad X1 Carbon Gen 12"],
+    "resolutions": [{"w": 2880, "h": 1800, "ratio": "16:10"}],
+    "dpr": 2,
+    "priority": 9600,
+    "type": "laptop",
+    "os": {"name": "windows", "minVersion": "11"},
+    "cpu": {"brand": "Intel", "model": "Core Ultra 7 155H"}
+  },
+  {
+    "id": "legion-9i-2024",
+    "brand": "Lenovo",
+    "model": "Legion 9i (2024)",
+    "series": "Legion",
+    "year": 2024,
+    "uaContains": ["Legion 9 16IRX9", "Legion 9i"],
+    "resolutions": [{"w": 3200, "h": 2000, "ratio": "16:10"}],
+    "dpr": 2.1,
+    "priority": 9500,
+    "type": "laptop",
+    "os": {"name": "windows", "minVersion": "11"},
+    "cpu": {"brand": "Intel", "model": "Core i9-14900HX"}
+  },
+  {
+    "id": "yoga-9i-gen9",
+    "brand": "Lenovo",
+    "model": "Yoga 9i Gen 9",
+    "series": "Yoga",
+    "year": 2024,
+    "uaContains": ["Yoga 9 14IMH9", "Yoga 9i Gen 9"],
+    "resolutions": [{"w": 2880, "h": 1800, "ratio": "16:10"}],
+    "dpr": 2,
+    "priority": 9400,
+    "type": "laptop",
+    "os": {"name": "windows", "minVersion": "11"},
+    "cpu": {"brand": "Intel", "model": "Core Ultra 7 165H"}
+  },
+  {
+    "id": "thinkbook-14-gen7",
+    "brand": "Lenovo",
+    "model": "ThinkBook 14 Gen 7",
+    "series": "ThinkBook",
+    "year": 2025,
+    "uaContains": ["ThinkBook 14 G7", "ThinkBook 14 Gen 7"],
+    "resolutions": [{"w": 2240, "h": 1400, "ratio": "16:10"}],
+    "dpr": 1.8,
+    "priority": 9200,
+    "type": "laptop",
+    "os": {"name": "windows", "minVersion": "11"},
+    "cpu": {"brand": "AMD", "model": "Ryzen AI 9 HX 370"}
+  }
+]
+
