@@ -1,6 +1,6 @@
 {
   "name": "get-fingerprint-id",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "获取指纹id",
   "type": "module",
   "main": "dist/index.js",
