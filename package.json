@@ -1,6 +1,6 @@
 {
   "name": "get-fingerprint-id",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "获取指纹id",
   "type": "module",
   "main": "dist/sass-id.umd.js",
