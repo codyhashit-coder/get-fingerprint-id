@@ -1,5 +1,5 @@
 {
-  "name": "sass-getid",
+  "name": "get-fingerprint-id",
   "version": "1.0.0",
   "description": "获取指纹id",
   "type": "module",
@@ -10,10 +10,13 @@
     "build": "vite build",
     "dev": "vite",
     "preview": "vite preview",
-    "update-devices": "tsx scripts/update-devices.ts"
+    "update-devices": "tsx scripts/update-devices.ts",
+    "publish:prod": "npm publish --access public"
   },
   "keywords": [
-    "sass指纹id"
+    "sass指纹id",
+    "fingerprint",
+    "fingerprint-id"
   ],
   "author": "cody",
   "license": "ISC",

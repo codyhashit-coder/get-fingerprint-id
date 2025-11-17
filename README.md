@@ -1,4 +1,4 @@
-# sass-getid
+# get-fingerprint-id
 
 一个高精度的设备指纹识别库，支持通过多维度特征（UA、分辨率、DPR、Canvas、WebGL、字体、音频等）识别设备型号并生成唯一设备ID。
 
@@ -16,19 +16,19 @@
 ### npm
 
 ```bash
-npm install sass-getid
+npm install get-fingerprint-id
 ```
 
 ### yarn
 
 ```bash
-yarn add sass-getid
+yarn add get-fingerprint-id
 ```
 
 ### pnpm
 
 ```bash
-pnpm add sass-getid
+pnpm add get-fingerprint-id
 ```
 
 ## 🚀 快速开始
@@ -36,7 +36,7 @@ pnpm add sass-getid
 ### 基础用法
 
 ```javascript
-import { detector } from 'sass-getid';
+import { detector } from 'get-fingerprint-id';
 
 // 等待设备数据库加载完成（通常很快）
 setTimeout(async () => {
@@ -69,7 +69,7 @@ setTimeout(async () => {
   <div id="result"></div>
   
   <script type="module">
-    import { detector } from 'https://cdn.jsdelivr.net/npm/sass-getid/dist/sass-id.es.js';
+    import { detector } from 'https://cdn.jsdelivr.net/npm/get-fingerprint-id/dist/sass-id.es.js';
     
     async function init() {
       // 等待设备数据库加载
@@ -412,8 +412,8 @@ const device = deviceLoader.getDeviceById('iphone-15-pro');
 ### 克隆项目
 
 ```bash
-git clone <repository-url>
-cd sass-getId
+git clone https://github.com/codyhashit-coder/get-fingerprint-id.git
+cd get-fingerprint-id
 ```
 
 ### 安装依赖
@@ -450,7 +450,7 @@ import type {
   DeviceType,
   ModelRule,
   BrowserInfo
-} from 'sass-getid';
+} from 'get-fingerprint-id';
 ```
 
 ## 🤝 贡献
